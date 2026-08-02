@@ -64,16 +64,6 @@ TrueSkill models every player with two numbers: an estimated skill **μ** and an
 - **New players start at 1** and climb quickly: while your uncertainty is high, every result teaches the system a lot, so your first games move your rating fast.
 - **Established players move slowly**: after many games the system knows your level, so a single win or loss shifts you only a little.
 
-How much a match is worth depends on *who* you beat:
-
-| Scenario | Effect on your TrueSkill |
-|---|---|
-| Beat a team rated **above** you | Large gain — an upset is strong evidence |
-| Beat a team rated **like** you | Normal gain |
-| Beat a team rated far **below** you | Small gain — expected result, little new information |
-| Lose to a team rated far **below** you | Large drop |
-| Team games | Your update accounts for your **teammates'** ratings too — carrying a weaker teammate to a win counts for more |
-
 ### TrueSkill 2 (CSR)
 
 CSR runs on **TrueSkill 2** — the successor algorithm Microsoft designed for Halo 5 / Halo Infinite ranked play. Our engine is a **from-scratch rewrite implemented directly from the published research paper** ([*TrueSkill 2: An improved Bayesian skill rating system* — Minka, Cleven & Zaykov, Microsoft Research, 2018](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)), running the full Bayesian factor-graph update, not an approximation. **This is the recommended rating system** — the one we use as the main competitive ladder — and it maps skill onto Halo-style tiers. Each tier below Onyx has six sub-ranks of 50 CSR each:
