@@ -116,7 +116,13 @@ All of this is visible live on the **[stats site](https://halo-wars-definitive-e
 
 ## Screenshots
 
-*Coming with the first release.*
+**Match History** — every ranked game with map, teams, leaders, duration, and per-player rating changes:
+
+<p align="center">
+  <img src="assets/screenshots/match-history.png" width="900">
+</p>
+
+*Player names in screenshots are replaced with placeholders. More screenshots coming with the first release.*
 
 ---
 
