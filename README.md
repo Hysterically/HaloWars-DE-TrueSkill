@@ -4,8 +4,9 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.0 — the first public release](../../releases/latest)
+> ### ⬇️ [Download v1.1 — the community leaderboard, built in](../../releases/latest)
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation).
+> On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
 The original Halo Wars (2009) was built around a **TrueSkill™-powered ranked ladder** — skill ratings, a public leaderboard, and the climb was half the game. When **Halo Wars: Definitive Edition** was released, that entire system was removed: no skill ratings, no leaderboard, no match history. **This project is a rebuild of that ranked experience** for the Microsoft Store version — an in-game overlay backed by a community ladder, restoring what Definitive Edition left out and modernizing it with TrueSkill 2.
 
@@ -117,6 +118,18 @@ All of this is visible live on the **[stats site](https://halo-wars-definitive-e
 ## Where the data comes from
 
 **Halo Wars: Definitive Edition has no official API** — no Halo Waypoint stats, no public match service, nothing to query. So as each ranked match ends, the overlay reads the match data directly from the running game's memory (map, teams, leaders, scores, duration — the same info as the post-game screen) and syncs it to the shared community database that powers the ladder and the [stats site](https://halo-wars-definitive-edition-stats.pages.dev). Every player in a match reports the same game independently and duplicates are merged, so the ladder stays consistent without any official service behind it.
+
+---
+
+## Joining the ladder
+
+Downloading the overlay connects you to the community history immediately — the leaderboards fill in on first launch, and your finished matches upload automatically. **Being rated** is one step more: the ladder is an invite list (the Verified Roster), and a match moves ratings only when every player in it is verified — that's what keeps the board free of smurfs, farming, and fake results.
+
+1. Open the overlay (**INSERT**) → **Verified Roster** tab → **Request to join** (it fills in your gamertag).
+2. A community moderator approves the request — once you're on the roster, your ratings recompute automatically, **past games included**.
+3. Until then your games are recorded and visible in Match History, they just don't move anyone's rating yet.
+
+**Opting out entirely:** delete the `sync_server_url` and `sync_api_key` lines from `ms_trueskill_config.txt` next to the DLL — with them removed, the overlay is a purely local tracker and nothing is ever uploaded anywhere.
 
 ---
 
