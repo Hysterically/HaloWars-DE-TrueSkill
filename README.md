@@ -4,8 +4,8 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### 🚧 First public release coming soon — watch this repo.
-> The tool is in active development and live testing with the current ranked community. Star/watch the repo to be notified when the first release lands.
+> ### ⬇️ [Download v1.0 — the first public release](../../releases/latest)
+> Unzip, run `HaloWarsStatsLoader.exe --install` once, play. No administrator rights needed — see [Installation](#installation).
 
 The original Halo Wars (2009) was built around a **TrueSkill™-powered ranked ladder** — skill ratings, a public leaderboard, and the climb was half the game. When **Halo Wars: Definitive Edition** was released, that entire system was removed: no skill ratings, no leaderboard, no match history. **This project is a rebuild of that ranked experience** for the Microsoft Store version — an in-game overlay backed by a community ladder, restoring what Definitive Edition left out and modernizing it with TrueSkill 2.
 
@@ -128,7 +128,7 @@ All of this is visible live on the **[stats site](https://halo-wars-definitive-e
   <img src="assets/screenshots/match-history.png" width="900">
 </p>
 
-*Player names in screenshots are replaced with placeholders. More screenshots coming with the first release.*
+*Player names in screenshots are replaced with placeholders. More screenshots coming soon.*
 
 ---
 
@@ -190,7 +190,7 @@ Only slightly — both systems weigh results by how *surprising* they are. Losin
 - **[MinHook](https://github.com/TsudaKageyu/minhook)** — the hooking library that lets the overlay draw inside the game. BSD 2-Clause License.
 - **TrueSkill™ / TrueSkill 2** — rating engines implemented from scratch from the published Microsoft Research papers ([TrueSkill](https://www.microsoft.com/en-us/research/publication/trueskilltm-a-bayesian-skill-rating-system/), [TrueSkill 2](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)). The TrueSkill 2 paper transcription and Python reference implementation are published in [reference/](reference/).
 
-Full license texts for bundled open-source components will ship alongside every binary release.
+Full license texts for bundled open-source components ship alongside every binary release (`licenses\` in the zip).
 
 ---
 
