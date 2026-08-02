@@ -2,12 +2,12 @@
 
 **Competitive TrueSkill & CSR ratings, leaderboards, and match history for Halo Wars: Definitive Edition (Microsoft Store).**
 
+🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
+
 > ### 🚧 First public release coming soon — watch this repo.
 > The tool is in active development and live testing with the current ranked community. Star/watch the repo to be notified when the first release lands.
 
 Halo Wars: Definitive Edition shipped without the original ranked experience — no skill ratings, no leaderboards, no match history. This project brings all of that back for the Microsoft Store version, as an in-game overlay backed by a community ladder.
-
-**See the ladder live:** [Halo Wars DE Stats](https://halo-wars-definitive-edition-stats.pages.dev) — leaderboards, player pages, and recent games from the current community, updated automatically.
 
 ---
 
@@ -31,6 +31,64 @@ Halo Wars: Definitive Edition shipped without the original ranked experience —
 
 ### ⚡ FPS cap control
 - Raise the game's frame-rate cap: 60 / 120 / 240 / 360 FPS, plus a built-in frame-rate meter. No config files, one hotkey.
+
+---
+
+## How the ratings work
+
+Two rating systems run side by side over the same match history. Both are *earned in real matches only* — there is no placement quiz, and ratings can't be edited by anyone, including us.
+
+### TrueSkill™
+
+TrueSkill models every player with two numbers: an estimated skill **μ** and an uncertainty **σ**. The number shown on the ladder is the **conservative estimate** (μ − 3σ) — skill the system considers *proven*, not just guessed. That has two visible effects:
+
+- **New players start at 1** and climb quickly: while your uncertainty is high, every result teaches the system a lot, so your first games move your rating fast.
+- **Established players move slowly**: after many games the system knows your level, so a single win or loss shifts you only a little.
+
+How much a match is worth depends on *who* you beat:
+
+| Scenario | Effect on your TrueSkill |
+|---|---|
+| Beat a team rated **above** you | Large gain — an upset is strong evidence |
+| Beat a team rated **like** you | Normal gain |
+| Beat a team rated far **below** you | Small gain — expected result, little new information |
+| Lose to a team rated far **below** you | Large drop |
+| Team games | Your update accounts for your **teammates'** ratings too — carrying a weaker teammate to a win counts for more |
+
+### CSR (Competitive Skill Rank)
+
+CSR runs on **TrueSkill 2** (the successor algorithm designed for Halo 5 / Halo Infinite ranked play) and maps skill onto Halo-style tiers. Each tier below Onyx has six sub-ranks of 50 CSR each:
+
+| Tier | CSR range |
+|---|---|
+| 🥉 Bronze 1–6 | 0 – 299 |
+| 🥈 Silver 1–6 | 300 – 599 |
+| 🥇 Gold 1–6 | 600 – 899 |
+| 💠 Platinum 1–6 | 900 – 1199 |
+| 💎 Diamond 1–6 | 1200 – 1499 |
+| ⬛ Onyx | 1500+ (shows your exact CSR) |
+| 🏆 Champion | Top players on the leaderboard at 1600+ |
+
+Everyone starts at CSR 0 with maximum uncertainty. Like TrueSkill, early games move you hundreds of CSR at a time while the system finds your level; once established, a typical match moves you a few dozen. **Champion is not a CSR threshold you can camp** — it is an accolade for the very top of the board, recalculated as the leaderboard changes.
+
+### Halo 2 style: ranks 1–50
+
+Prefer the classic ladder? Switch the display to **Halo 2 1–50** ranks (in the overlay and the in-game lobby/scoreboard icons). Your CSR is mapped onto the iconic 50-rank ladder, and just like the original, the climb gets steeper near the top:
+
+| CSR | Halo 2 rank |
+|---|---|
+| 0 – 1599 | 1 – 44 (≈ every 36 CSR) |
+| 1600 – 1899 | 45 – 49 (every 60 CSR) |
+| 1900+ | **50** |
+
+### Example: a new player's first session
+
+1. You install the tool and play your first ranked 3v3 — you show as **rank 1 / CSR 0** (unproven, not "bad").
+2. You win two games against mid-Gold opponents: the system learns fast — you jump to mid-Silver territory in one evening.
+3. You lose to a Diamond team: barely moves you — losing to better players is expected and costs little.
+4. Over the next ~10–20 games your uncertainty shrinks, the swings get smaller, and your rating settles where you actually play.
+
+All of this is visible live on the **[stats site](https://halo-wars-definitive-edition-stats.pages.dev)**: full leaderboards, every player's rating history, and recent games with per-match rating changes.
 
 ---
 
@@ -65,10 +123,13 @@ No. The overlay records match outcomes and displays ratings/statistics. It does 
 Not currently — this tool targets the Microsoft Store version.
 
 **Where do the ratings come from?**
-Every match is rated with the TrueSkill™ and TrueSkill 2 algorithms — the published rating systems designed for Xbox Live and Halo matchmaking — over a shared community ladder. Ratings for the whole ladder are visible on the [stats site](https://halo-wars-definitive-edition-stats.pages.dev).
+Every match is rated with the TrueSkill™ and TrueSkill 2 algorithms — the published rating systems designed for Xbox Live and Halo matchmaking — over a shared community ladder. See [How the ratings work](#how-the-ratings-work) above, and browse the whole ladder on the [stats site](https://halo-wars-definitive-edition-stats.pages.dev).
 
 **How do I join the ranked ladder?**
 The ladder uses a verified player roster to keep ratings fair. You can file a join request directly from the in-game overlay.
+
+**Can my rating go down for losing to a much better player?**
+Only slightly — both systems weigh results by how *surprising* they are. Losing to a favorite costs little; beating one pays a lot.
 
 ---
 
