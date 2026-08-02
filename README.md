@@ -155,6 +155,16 @@ Only slightly — both systems weigh results by how *surprising* they are. Losin
 
 ---
 
+## Built with
+
+- **[Dear ImGui](https://github.com/ocornut/imgui)** — the overlay's user interface. MIT License.
+- **[MinHook](https://github.com/TsudaKageyu/minhook)** — the hooking library that lets the overlay draw inside the game. BSD 2-Clause License.
+- **TrueSkill™ / TrueSkill 2** — rating engines implemented from scratch from the published Microsoft Research papers ([TrueSkill](https://www.microsoft.com/en-us/research/publication/trueskilltm-a-bayesian-skill-rating-system/), [TrueSkill 2](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)).
+
+Full license texts for bundled open-source components will ship alongside every binary release.
+
+---
+
 *This tool is free software distributed as-is; all rights reserved. Not affiliated with Microsoft, Xbox Game Studios, or 343 Industries / Halo Studios. Halo Wars is a trademark of Microsoft Corporation.*
 
 **Revived by Hysterically.**
