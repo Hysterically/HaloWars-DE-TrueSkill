@@ -116,7 +116,7 @@ All of this is visible live on the **[stats site](https://halo-wars-definitive-e
 
 ## Where the data comes from
 
-**Halo Wars: Definitive Edition has no official API** — no Halo Waypoint stats, no public match service, nothing to query. So the overlay records each ranked match from your own game as it ends (map, teams, leaders, scores, duration — the same info as the post-game screen) and syncs it to the shared community database that powers the ladder and the [stats site](https://halo-wars-definitive-edition-stats.pages.dev). Every player in a match reports the same game independently and duplicates are merged, so the ladder stays consistent without any official service behind it.
+**Halo Wars: Definitive Edition has no official API** — no Halo Waypoint stats, no public match service, nothing to query. So as each ranked match ends, the overlay reads the match data directly from the running game's memory (map, teams, leaders, scores, duration — the same info as the post-game screen) and syncs it to the shared community database that powers the ladder and the [stats site](https://halo-wars-definitive-edition-stats.pages.dev). Every player in a match reports the same game independently and duplicates are merged, so the ladder stays consistent without any official service behind it.
 
 ---
 
