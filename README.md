@@ -43,7 +43,7 @@ This ladder is built for — and used by — the **high-level Halo Wars: DE comp
 *The map art and leader portraits used on the match cards.*
 
 ### 🎖️ In-game rank icons
-- The game itself draws rank art next to players in the **pre-game lobby and the in-match scoreboard** — your opponents' ranks visible right where the original Halo Wars showed them, using the classic 1–50 numerals.
+- The game itself draws rank art next to players in the **pre-game lobby and the in-match scoreboard** — your opponents' ranks visible at a glance, using the classic 1–50 numerals.
 
 ### 🌐 PC ↔ Xbox custom lobbies
 - Cross-play custom-game lobbies between PC (Microsoft Store) and Xbox players: search for Xbox-hosted lobbies and advertise your own PC lobby to Xbox friends.
