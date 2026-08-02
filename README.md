@@ -7,7 +7,9 @@
 > ### 🚧 First public release coming soon — watch this repo.
 > The tool is in active development and live testing with the current ranked community. Star/watch the repo to be notified when the first release lands.
 
-Halo Wars: Definitive Edition shipped without the original ranked experience — no skill ratings, no leaderboards, no match history. This project brings all of that back for the Microsoft Store version, as an in-game overlay backed by a community ladder.
+The original Halo Wars (2009) was built around a **TrueSkill™-powered ranked ladder** — skill ratings, a public leaderboard, and the climb was half the game. When **Halo Wars: Definitive Edition** was released, that entire system was removed: no skill ratings, no leaderboard, no match history. **This project is a rebuild of that ranked experience** for the Microsoft Store version — an in-game overlay backed by a community ladder, restoring what Definitive Edition left out and modernizing it with TrueSkill 2.
+
+This ladder is built for — and used by — the **high-level Halo Wars: DE competitive community**: the players still competing seriously are the ones being rated on it.
 
 ---
 
@@ -15,7 +17,7 @@ Halo Wars: Definitive Edition shipped without the original ranked experience —
 
 ### 🏆 Skill ratings & leaderboards
 - **TrueSkill™** ladder — the same rating model used by Xbox Live matchmaking, tracked per game type (1v1 / 2v2 / 3v3 / Deathmatch).
-- **TrueSkill 2 (CSR)** ladder — a Competitive Skill Rank powered by our from-scratch rewrite of Microsoft Research's TrueSkill 2 algorithm, with Halo-style tiers: Bronze → Silver → Gold → Platinum → Diamond → **Onyx**, plus a **Champion** accolade for the top of the board.
+- **TrueSkill 2 (CSR)** ladder — **the recommended system** — a Competitive Skill Rank powered by our from-scratch rewrite of Microsoft Research's TrueSkill 2 algorithm, with Halo-style tiers: Bronze → Silver → Gold → Platinum → Diamond → **Onyx**, plus a **Champion** accolade for the top of the board.
 - Two rank display styles, switchable in-game: modern **tier emblems** or the classic **Halo 2 1–50** numbered ranks.
 - Monthly wins boards alongside the lifetime skill ladders.
 
@@ -57,7 +59,7 @@ How much a match is worth depends on *who* you beat:
 
 ### TrueSkill 2 (CSR)
 
-CSR runs on **TrueSkill 2** — the successor algorithm Microsoft designed for Halo 5 / Halo Infinite ranked play. Our engine is a **from-scratch rewrite implemented directly from the published research paper** ([*TrueSkill 2: An improved Bayesian skill rating system* — Minka, Cleven & Zaykov, Microsoft Research, 2018](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)), running the full Bayesian factor-graph update, not an approximation. It maps skill onto Halo-style tiers. Each tier below Onyx has six sub-ranks of 50 CSR each:
+CSR runs on **TrueSkill 2** — the successor algorithm Microsoft designed for Halo 5 / Halo Infinite ranked play. Our engine is a **from-scratch rewrite implemented directly from the published research paper** ([*TrueSkill 2: An improved Bayesian skill rating system* — Minka, Cleven & Zaykov, Microsoft Research, 2018](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)), running the full Bayesian factor-graph update, not an approximation. **This is the recommended rating system** — the one we use as the main competitive ladder — and it maps skill onto Halo-style tiers. Each tier below Onyx has six sub-ranks of 50 CSR each:
 
 | Tier | CSR range |
 |---|---|
