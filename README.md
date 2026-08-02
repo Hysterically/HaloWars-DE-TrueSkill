@@ -25,6 +25,23 @@ This ladder is built for — and used by — the **high-level Halo Wars: DE comp
 - Every ranked game recorded automatically: map, teams, leaders, scores, duration, and per-player rating changes.
 - Rich in-overlay match cards with map thumbnails, leader portraits, and result icons — filter by game type, playlist, map, or player.
 
+<p align="center">
+  <img src="assets/maps/blood_gulch.jpg" width="150">&nbsp;
+  <img src="assets/maps/exile.jpg" width="150">&nbsp;
+  <img src="assets/maps/fort_deen.jpg" width="150">&nbsp;
+  <img src="assets/maps/chasms.jpg" width="150">
+</p>
+<p align="center">
+  <img src="assets/leaders/cutter.jpg" width="64">&nbsp;
+  <img src="assets/leaders/forge.jpg" width="64">&nbsp;
+  <img src="assets/leaders/anders.jpg" width="64">&nbsp;
+  <img src="assets/leaders/arbiter.jpg" width="64">&nbsp;
+  <img src="assets/leaders/brute.jpg" width="64">&nbsp;
+  <img src="assets/leaders/prophet.jpg" width="64">
+</p>
+
+*The map art and leader portraits used on the match cards.*
+
 ### 🎖️ In-game rank icons
 - The game itself draws rank art next to players in the **pre-game lobby and the in-match scoreboard** — your opponents' ranks visible right where the original Halo Wars showed them, using the classic 1–50 numerals.
 
@@ -63,19 +80,32 @@ CSR runs on **TrueSkill 2** — the successor algorithm Microsoft designed for H
 
 | Tier | CSR range |
 |---|---|
-| 🥉 Bronze 1–6 | 0 – 299 |
-| 🥈 Silver 1–6 | 300 – 599 |
-| 🥇 Gold 1–6 | 600 – 899 |
-| 💠 Platinum 1–6 | 900 – 1199 |
-| 💎 Diamond 1–6 | 1200 – 1499 |
-| ⬛ Onyx | 1500+ (shows your exact CSR) |
-| 🏆 Champion | Top players on the leaderboard at 1600+ |
+| <img src="assets/csr/csr-bronze-1.png" width="32" align="center"> **Bronze 1–6** | 0 – 299 |
+| <img src="assets/csr/csr-silver-1.png" width="32" align="center"> **Silver 1–6** | 300 – 599 |
+| <img src="assets/csr/csr-gold-1.png" width="32" align="center"> **Gold 1–6** | 600 – 899 |
+| <img src="assets/csr/csr-platinum-1.png" width="32" align="center"> **Platinum 1–6** | 900 – 1199 |
+| <img src="assets/csr/csr-diamond-1.png" width="32" align="center"> **Diamond 1–6** | 1200 – 1499 |
+| <img src="assets/csr/csr-onyx.png" width="32" align="center"> **Onyx** | 1500+ (shows your exact CSR) |
+| <img src="assets/csr/csr-champion.png" width="32" align="center"> **Champion** | Top players on the leaderboard at 1600+ |
+
+*The actual tier emblems the overlay and leaderboards display.*
 
 Everyone starts at CSR 0 with maximum uncertainty. Like TrueSkill, early games move you hundreds of CSR at a time while the system finds your level; once established, a typical match moves you a few dozen. **Champion is not a CSR threshold you can camp** — it is an accolade for the very top of the board, recalculated as the leaderboard changes.
 
 ### Halo 2 style: ranks 1–50
 
-Prefer the classic ladder? Switch the display to **Halo 2 1–50** ranks (in the overlay and the in-game lobby/scoreboard icons). Your CSR is mapped onto the iconic 50-rank ladder, and just like the original, the climb gets steeper near the top:
+Prefer the classic ladder? Switch the display to **Halo 2 1–50** ranks (in the overlay and the in-game lobby/scoreboard icons). Your CSR is mapped onto the iconic 50-rank ladder:
+
+<p align="center">
+  <img src="assets/h2/h2-rank-01.png" width="56">&nbsp;
+  <img src="assets/h2/h2-rank-10.png" width="56">&nbsp;
+  <img src="assets/h2/h2-rank-25.png" width="56">&nbsp;
+  <img src="assets/h2/h2-rank-40.png" width="56">&nbsp;
+  <img src="assets/h2/h2-rank-45.png" width="56">&nbsp;
+  <img src="assets/h2/h2-rank-50.png" width="56">
+</p>
+
+Just like the original, the climb gets steeper near the top:
 
 | CSR | Halo 2 rank |
 |---|---|
