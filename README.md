@@ -136,15 +136,29 @@ All of this is visible live on the **[stats site](https://halo-wars-definitive-e
 
 - Windows 10/11 (64-bit)
 - **Halo Wars: Definitive Edition — Microsoft Store / Xbox app version** (the Steam version is not supported by this tool)
-- The launcher must be run **as administrator**
+- **No administrator rights**
 
-**Why administrator?** The Microsoft Store version of the game runs in a Windows sandbox (an *AppContainer*) that normal programs are not allowed to attach to. The launcher needs elevation once per game session to load the overlay into the game — this is the only supported way to add an overlay to a Store game. The overlay itself only reads match results and draws its interface; it does not modify gameplay.
+**Does it need administrator?** No — and no UAC prompt at any point. The Microsoft Store version of the game runs inside a Windows sandbox (an *AppContainer*), which is why the overlay has to be loaded into the game rather than simply run alongside it. That loading is done by an ordinary user-level program, and once loaded the overlay lives inside the game's own sandbox with no privileges of its own. It only reads match results and draws its interface; it does not modify gameplay or touch any game file.
 
 ---
 
 ## Installation
 
-Instructions will ship with the first release. In short: download the launcher from the [Releases](../../releases) page, run it as administrator, start the game — the launcher keeps the tool up to date automatically.
+1. Download the latest release from the [Releases](../../releases) page and unzip it anywhere you like. Keep `HaloWarsStatsLoader.exe` and `MSTrueSkill.dll` **together in the same folder**.
+2. Run `HaloWarsStatsLoader.exe --install` once. No prompt, no administrator.
+3. Start Halo Wars from the Xbox app as usual. The overlay appears by itself a few seconds in — press **INSERT** to show or hide it.
+
+That is the whole setup. From then on it loads every time you play, and nothing is added to the game's own folder.
+
+To stop it loading automatically:
+
+```
+HaloWarsStatsLoader.exe --uninstall
+```
+
+`HaloWarsStatsLoader.exe --status` shows what is currently set up, and `--inject` loads the overlay into a game that is already running if you would rather not install anything at all.
+
+> Moving the folder after installing breaks it, because the autostart entry records the exact path. Run `--install` again from the new location.
 
 ---
 
