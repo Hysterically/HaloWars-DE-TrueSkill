@@ -15,7 +15,7 @@ Halo Wars: Definitive Edition shipped without the original ranked experience —
 
 ### 🏆 Skill ratings & leaderboards
 - **TrueSkill™** ladder — the same rating model used by Xbox Live matchmaking, tracked per game type (1v1 / 2v2 / 3v3 / Deathmatch).
-- **CSR** ladder — a TrueSkill 2 based Competitive Skill Rank with Halo-style tiers: Bronze → Silver → Gold → Platinum → Diamond → **Onyx**, plus a **Champion** accolade for the top of the board.
+- **TrueSkill 2 (CSR)** ladder — a Competitive Skill Rank powered by our from-scratch rewrite of Microsoft Research's TrueSkill 2 algorithm, with Halo-style tiers: Bronze → Silver → Gold → Platinum → Diamond → **Onyx**, plus a **Champion** accolade for the top of the board.
 - Two rank display styles, switchable in-game: modern **tier emblems** or the classic **Halo 2 1–50** numbered ranks.
 - Monthly wins boards alongside the lifetime skill ladders.
 
@@ -55,9 +55,9 @@ How much a match is worth depends on *who* you beat:
 | Lose to a team rated far **below** you | Large drop |
 | Team games | Your update accounts for your **teammates'** ratings too — carrying a weaker teammate to a win counts for more |
 
-### CSR (Competitive Skill Rank)
+### TrueSkill 2 (CSR)
 
-CSR runs on **TrueSkill 2** (the successor algorithm designed for Halo 5 / Halo Infinite ranked play) and maps skill onto Halo-style tiers. Each tier below Onyx has six sub-ranks of 50 CSR each:
+CSR runs on **TrueSkill 2** — the successor algorithm Microsoft designed for Halo 5 / Halo Infinite ranked play. Our engine is a **from-scratch rewrite implemented directly from the published research paper** ([*TrueSkill 2: An improved Bayesian skill rating system* — Minka, Cleven & Zaykov, Microsoft Research, 2018](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)), running the full Bayesian factor-graph update, not an approximation. It maps skill onto Halo-style tiers. Each tier below Onyx has six sub-ranks of 50 CSR each:
 
 | Tier | CSR range |
 |---|---|
@@ -123,7 +123,7 @@ No. The overlay records match outcomes and displays ratings/statistics. It does 
 Not currently — this tool targets the Microsoft Store version.
 
 **Where do the ratings come from?**
-Every match is rated with the TrueSkill™ and TrueSkill 2 algorithms — the published rating systems designed for Xbox Live and Halo matchmaking — over a shared community ladder. See [How the ratings work](#how-the-ratings-work) above, and browse the whole ladder on the [stats site](https://halo-wars-definitive-edition-stats.pages.dev).
+Every match is rated with the TrueSkill™ and TrueSkill 2 algorithms — the published rating systems designed for Xbox Live and Halo matchmaking, rewritten from the original research papers — over a shared community ladder. See [How the ratings work](#how-the-ratings-work) above, and browse the whole ladder on the [stats site](https://halo-wars-definitive-edition-stats.pages.dev).
 
 **How do I join the ranked ladder?**
 The ladder uses a verified player roster to keep ratings fair. You can file a join request directly from the in-game overlay.
