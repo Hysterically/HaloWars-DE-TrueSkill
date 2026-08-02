@@ -114,6 +114,12 @@ All of this is visible live on the **[stats site](https://halo-wars-definitive-e
 
 ---
 
+## Where the data comes from
+
+**Halo Wars: Definitive Edition has no official API** — no Halo Waypoint stats, no public match service, nothing to query. So the overlay records each ranked match from your own game as it ends (map, teams, leaders, scores, duration — the same info as the post-game screen) and syncs it to the shared community database that powers the ladder and the [stats site](https://halo-wars-definitive-edition-stats.pages.dev). Every player in a match reports the same game independently and duplicates are merged, so the ladder stays consistent without any official service behind it.
+
+---
+
 ## Screenshots
 
 **Match History** — every ranked game with map, teams, leaders, duration, and per-player rating changes:
@@ -152,6 +158,9 @@ Not currently — this tool targets the Microsoft Store version.
 
 **Where do the ratings come from?**
 Every match is rated with the TrueSkill™ and TrueSkill 2 algorithms — the published rating systems designed for Xbox Live and Halo matchmaking, rewritten from the original research papers — over a shared community ladder. See [How the ratings work](#how-the-ratings-work) above, and browse the whole ladder on the [stats site](https://halo-wars-definitive-edition-stats.pages.dev).
+
+**The game has no API — how do you get match data at all?**
+The overlay records each match's results from your own game as it ends — see [Where the data comes from](#where-the-data-comes-from).
 
 **How do I join the ranked ladder?**
 The ladder uses a verified player roster to keep ratings fair. You can file a join request directly from the in-game overlay.
