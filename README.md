@@ -66,7 +66,7 @@ TrueSkill models every player with two numbers: an estimated skill **μ** and an
 
 ### TrueSkill 2 (CSR)
 
-CSR runs on **TrueSkill 2** — the successor algorithm Microsoft designed for Halo 5 / Halo Infinite ranked play. Our engine is a **from-scratch rewrite implemented directly from the published research paper** ([*TrueSkill 2: An improved Bayesian skill rating system* — Minka, Cleven & Zaykov, Microsoft Research, 2018](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)), running the full Bayesian factor-graph update, not an approximation. **This is the recommended rating system** — the one we use as the main competitive ladder — and it maps skill onto Halo-style tiers. Each tier below Onyx has six sub-ranks of 50 CSR each:
+CSR runs on **TrueSkill 2** — the successor algorithm Microsoft designed for Halo 5 / Halo Infinite ranked play. Our engine is a **from-scratch rewrite implemented directly from the published research paper** ([*TrueSkill 2: An improved Bayesian skill rating system* — Minka, Cleven & Zaykov, Microsoft Research, 2018](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)), running the full Bayesian factor-graph update, not an approximation. Both the paper and the math are published right here in this repo: a faithful Markdown transcription of the full paper ([reference/TRUESKILL2_PAPER.md](reference/TRUESKILL2_PAPER.md)) and the MIT-licensed **Python reference implementation** ([reference/trueskill2/](reference/trueskill2/)) that the in-game engine is verified against — the two agree to ~1e-13, so anyone can check the ladder's math. **This is the recommended rating system** — the one we use as the main competitive ladder — and it maps skill onto Halo-style tiers. Each tier below Onyx has six sub-ranks of 50 CSR each:
 
 | Tier | CSR range |
 |---|---|
@@ -174,7 +174,7 @@ Only slightly — both systems weigh results by how *surprising* they are. Losin
 
 - **[Dear ImGui](https://github.com/ocornut/imgui)** — the overlay's user interface. MIT License.
 - **[MinHook](https://github.com/TsudaKageyu/minhook)** — the hooking library that lets the overlay draw inside the game. BSD 2-Clause License.
-- **TrueSkill™ / TrueSkill 2** — rating engines implemented from scratch from the published Microsoft Research papers ([TrueSkill](https://www.microsoft.com/en-us/research/publication/trueskilltm-a-bayesian-skill-rating-system/), [TrueSkill 2](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)).
+- **TrueSkill™ / TrueSkill 2** — rating engines implemented from scratch from the published Microsoft Research papers ([TrueSkill](https://www.microsoft.com/en-us/research/publication/trueskilltm-a-bayesian-skill-rating-system/), [TrueSkill 2](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)). The TrueSkill 2 paper transcription and Python reference implementation are published in [reference/](reference/).
 
 Full license texts for bundled open-source components will ship alongside every binary release.
 
