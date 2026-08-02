@@ -5,7 +5,7 @@
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
 > ### ⬇️ [Download v1.0 — the first public release](../../releases/latest)
-> Unzip, run `HaloWarsStatsLoader.exe --install` once, play. No administrator rights needed — see [Installation](#installation).
+> Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation).
 
 The original Halo Wars (2009) was built around a **TrueSkill™-powered ranked ladder** — skill ratings, a public leaderboard, and the climb was half the game. When **Halo Wars: Definitive Edition** was released, that entire system was removed: no skill ratings, no leaderboard, no match history. **This project is a rebuild of that ranked experience** for the Microsoft Store version — an in-game overlay backed by a community ladder, restoring what Definitive Edition left out and modernizing it with TrueSkill 2.
 
@@ -145,16 +145,12 @@ All of this is visible live on the **[stats site](https://halo-wars-definitive-e
 ## Installation
 
 1. Download the latest release from the [Releases](../../releases) page and unzip it anywhere you like. Keep `HaloWarsStatsLoader.exe` and `MSTrueSkill.dll` **together in the same folder**.
-2. Run `HaloWarsStatsLoader.exe --install` once. No prompt, no administrator.
+2. Double-click **`Install Auto-Load.bat`** once — no terminal, no prompt, no administrator. (Prefer the command line? `HaloWarsStatsLoader.exe --install` does the same thing.)
 3. Start Halo Wars from the Xbox app as usual. The overlay appears by itself a few seconds in — press **INSERT** to show or hide it.
 
 That is the whole setup. From then on it loads every time you play, and nothing is added to the game's own folder.
 
-To stop it loading automatically:
-
-```
-HaloWarsStatsLoader.exe --uninstall
-```
+To stop it loading automatically, double-click `Uninstall Auto-Load.bat` (or run `HaloWarsStatsLoader.exe --uninstall`).
 
 `HaloWarsStatsLoader.exe --status` shows what is currently set up, and `--inject` loads the overlay into a game that is already running if you would rather not install anything at all.
 
