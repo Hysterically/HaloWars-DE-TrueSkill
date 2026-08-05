@@ -65,7 +65,7 @@ Every feature below exists for a reason — either something the original game h
 ### 🎖️ In-game rank icons
 - The game itself draws rank art next to players in the **pre-game lobby and the in-match scoreboard** — your opponents' ranks visible at a glance, using the classic 1–50 numerals.
 
-**Why:** Seeing who you are actually up against — before the first base goes down — was part of what made the original ladder feel like a ladder. In DE's lobby every player looks identical, whether they are on their tenth game or in the top ten. Ranks belong where the decision is made, so they are drawn inside the game next to each player instead of behind an alt-tab to a website.
+**Why:** Because showing it off *is* the point. A rank nobody else can see is a private statistic, and private statistics have never made anyone queue one more game — the flex is what a ladder actually runs on. A leaderboard on a website is not the same thing: the moment that matters is the lobby, when everyone loads in and sees exactly who they are sitting across from. So the rank is drawn in the game itself, next to every player in the pre-game lobby and the in-match scoreboard. You wear yours, you see theirs, and it lands before the first base goes down — in DE's own lobby every player looks identical whether they are on their tenth game or in the top ten.
 
 ### 🌐 PC ↔ Xbox custom lobbies
 - Cross-play custom-game lobbies between PC (Microsoft Store) and Xbox players: search for Xbox-hosted lobbies and advertise your own PC lobby to Xbox friends.
