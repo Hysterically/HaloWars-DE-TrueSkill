@@ -109,58 +109,58 @@ Prefer the classic ladder? Switch the display to **Halo 2 1–50** ranks (in the
 
 Just like the original, the climb gets steeper near the top: ranks **1–44** cost about **36 CSR** each, ranks **45–49** cost **60**, and **50** opens at 1900 CSR. Here is the whole ladder against the tier system — every rank, its CSR, and the tier you wear at that rank:
 
-| Halo 2 rank | CSR | CSR tier |
+| 1–50 rank | CSR | CSR tier |
 |:--|:--|:--|
-| <img src="assets/h2/h2-rank-01.png" width="26"> **1** | 0&nbsp;–&nbsp;36 | <img src="assets/csr/csr-bronze-1.png" width="22"> Bronze 1 |
-| <img src="assets/h2/h2-rank-02.png" width="26"> **2** | 37&nbsp;–&nbsp;72 | <img src="assets/csr/csr-bronze-1.png" width="22"> <img src="assets/csr/csr-bronze-2.png" width="22"> Bronze 1 – 2 |
-| <img src="assets/h2/h2-rank-03.png" width="26"> **3** | 73&nbsp;–&nbsp;109 | <img src="assets/csr/csr-bronze-2.png" width="22"> <img src="assets/csr/csr-bronze-3.png" width="22"> Bronze 2 – 3 |
-| <img src="assets/h2/h2-rank-04.png" width="26"> **4** | 110&nbsp;–&nbsp;145 | <img src="assets/csr/csr-bronze-3.png" width="22"> Bronze 3 |
-| <img src="assets/h2/h2-rank-05.png" width="26"> **5** | 146&nbsp;–&nbsp;181 | <img src="assets/csr/csr-bronze-3.png" width="22"> <img src="assets/csr/csr-bronze-4.png" width="22"> Bronze 3 – 4 |
-| <img src="assets/h2/h2-rank-06.png" width="26"> **6** | 182&nbsp;–&nbsp;218 | <img src="assets/csr/csr-bronze-4.png" width="22"> <img src="assets/csr/csr-bronze-5.png" width="22"> Bronze 4 – 5 |
-| <img src="assets/h2/h2-rank-07.png" width="26"> **7** | 219&nbsp;–&nbsp;254 | <img src="assets/csr/csr-bronze-5.png" width="22"> <img src="assets/csr/csr-bronze-6.png" width="22"> Bronze 5 – 6 |
-| <img src="assets/h2/h2-rank-08.png" width="26"> **8** | 255&nbsp;–&nbsp;290 | <img src="assets/csr/csr-bronze-6.png" width="22"> Bronze 6 |
-| <img src="assets/h2/h2-rank-09.png" width="26"> **9** | 291&nbsp;–&nbsp;327 | <img src="assets/csr/csr-bronze-6.png" width="22"> <img src="assets/csr/csr-silver-1.png" width="22"> Bronze 6 – Silver 1 |
-| <img src="assets/h2/h2-rank-10.png" width="26"> **10** | 328&nbsp;–&nbsp;363 | <img src="assets/csr/csr-silver-1.png" width="22"> <img src="assets/csr/csr-silver-2.png" width="22"> Silver 1 – 2 |
-| <img src="assets/h2/h2-rank-11.png" width="26"> **11** | 364&nbsp;–&nbsp;399 | <img src="assets/csr/csr-silver-2.png" width="22"> Silver 2 |
-| <img src="assets/h2/h2-rank-12.png" width="26"> **12** | 400&nbsp;–&nbsp;436 | <img src="assets/csr/csr-silver-3.png" width="22"> Silver 3 |
-| <img src="assets/h2/h2-rank-13.png" width="26"> **13** | 437&nbsp;–&nbsp;472 | <img src="assets/csr/csr-silver-3.png" width="22"> <img src="assets/csr/csr-silver-4.png" width="22"> Silver 3 – 4 |
-| <img src="assets/h2/h2-rank-14.png" width="26"> **14** | 473&nbsp;–&nbsp;509 | <img src="assets/csr/csr-silver-4.png" width="22"> <img src="assets/csr/csr-silver-5.png" width="22"> Silver 4 – 5 |
-| <img src="assets/h2/h2-rank-15.png" width="26"> **15** | 510&nbsp;–&nbsp;545 | <img src="assets/csr/csr-silver-5.png" width="22"> Silver 5 |
-| <img src="assets/h2/h2-rank-16.png" width="26"> **16** | 546&nbsp;–&nbsp;581 | <img src="assets/csr/csr-silver-5.png" width="22"> <img src="assets/csr/csr-silver-6.png" width="22"> Silver 5 – 6 |
-| <img src="assets/h2/h2-rank-17.png" width="26"> **17** | 582&nbsp;–&nbsp;618 | <img src="assets/csr/csr-silver-6.png" width="22"> <img src="assets/csr/csr-gold-1.png" width="22"> Silver 6 – Gold 1 |
-| <img src="assets/h2/h2-rank-18.png" width="26"> **18** | 619&nbsp;–&nbsp;654 | <img src="assets/csr/csr-gold-1.png" width="22"> <img src="assets/csr/csr-gold-2.png" width="22"> Gold 1 – 2 |
-| <img src="assets/h2/h2-rank-19.png" width="26"> **19** | 655&nbsp;–&nbsp;690 | <img src="assets/csr/csr-gold-2.png" width="22"> Gold 2 |
-| <img src="assets/h2/h2-rank-20.png" width="26"> **20** | 691&nbsp;–&nbsp;727 | <img src="assets/csr/csr-gold-2.png" width="22"> <img src="assets/csr/csr-gold-3.png" width="22"> Gold 2 – 3 |
-| <img src="assets/h2/h2-rank-21.png" width="26"> **21** | 728&nbsp;–&nbsp;763 | <img src="assets/csr/csr-gold-3.png" width="22"> <img src="assets/csr/csr-gold-4.png" width="22"> Gold 3 – 4 |
-| <img src="assets/h2/h2-rank-22.png" width="26"> **22** | 764&nbsp;–&nbsp;799 | <img src="assets/csr/csr-gold-4.png" width="22"> Gold 4 |
-| <img src="assets/h2/h2-rank-23.png" width="26"> **23** | 800&nbsp;–&nbsp;836 | <img src="assets/csr/csr-gold-5.png" width="22"> Gold 5 |
-| <img src="assets/h2/h2-rank-24.png" width="26"> **24** | 837&nbsp;–&nbsp;872 | <img src="assets/csr/csr-gold-5.png" width="22"> <img src="assets/csr/csr-gold-6.png" width="22"> Gold 5 – 6 |
-| <img src="assets/h2/h2-rank-25.png" width="26"> **25** | 873&nbsp;–&nbsp;909 | <img src="assets/csr/csr-gold-6.png" width="22"> <img src="assets/csr/csr-platinum-1.png" width="22"> Gold 6 – Platinum 1 |
-| <img src="assets/h2/h2-rank-26.png" width="26"> **26** | 910&nbsp;–&nbsp;945 | <img src="assets/csr/csr-platinum-1.png" width="22"> Platinum 1 |
-| <img src="assets/h2/h2-rank-27.png" width="26"> **27** | 946&nbsp;–&nbsp;981 | <img src="assets/csr/csr-platinum-1.png" width="22"> <img src="assets/csr/csr-platinum-2.png" width="22"> Platinum 1 – 2 |
-| <img src="assets/h2/h2-rank-28.png" width="26"> **28** | 982&nbsp;–&nbsp;1018 | <img src="assets/csr/csr-platinum-2.png" width="22"> <img src="assets/csr/csr-platinum-3.png" width="22"> Platinum 2 – 3 |
-| <img src="assets/h2/h2-rank-29.png" width="26"> **29** | 1019&nbsp;–&nbsp;1054 | <img src="assets/csr/csr-platinum-3.png" width="22"> <img src="assets/csr/csr-platinum-4.png" width="22"> Platinum 3 – 4 |
-| <img src="assets/h2/h2-rank-30.png" width="26"> **30** | 1055&nbsp;–&nbsp;1090 | <img src="assets/csr/csr-platinum-4.png" width="22"> Platinum 4 |
-| <img src="assets/h2/h2-rank-31.png" width="26"> **31** | 1091&nbsp;–&nbsp;1127 | <img src="assets/csr/csr-platinum-4.png" width="22"> <img src="assets/csr/csr-platinum-5.png" width="22"> Platinum 4 – 5 |
-| <img src="assets/h2/h2-rank-32.png" width="26"> **32** | 1128&nbsp;–&nbsp;1163 | <img src="assets/csr/csr-platinum-5.png" width="22"> <img src="assets/csr/csr-platinum-6.png" width="22"> Platinum 5 – 6 |
-| <img src="assets/h2/h2-rank-33.png" width="26"> **33** | 1164&nbsp;–&nbsp;1199 | <img src="assets/csr/csr-platinum-6.png" width="22"> Platinum 6 |
-| <img src="assets/h2/h2-rank-34.png" width="26"> **34** | 1200&nbsp;–&nbsp;1236 | <img src="assets/csr/csr-diamond-1.png" width="22"> Diamond 1 |
-| <img src="assets/h2/h2-rank-35.png" width="26"> **35** | 1237&nbsp;–&nbsp;1272 | <img src="assets/csr/csr-diamond-1.png" width="22"> <img src="assets/csr/csr-diamond-2.png" width="22"> Diamond 1 – 2 |
-| <img src="assets/h2/h2-rank-36.png" width="26"> **36** | 1273&nbsp;–&nbsp;1309 | <img src="assets/csr/csr-diamond-2.png" width="22"> <img src="assets/csr/csr-diamond-3.png" width="22"> Diamond 2 – 3 |
-| <img src="assets/h2/h2-rank-37.png" width="26"> **37** | 1310&nbsp;–&nbsp;1345 | <img src="assets/csr/csr-diamond-3.png" width="22"> Diamond 3 |
-| <img src="assets/h2/h2-rank-38.png" width="26"> **38** | 1346&nbsp;–&nbsp;1381 | <img src="assets/csr/csr-diamond-3.png" width="22"> <img src="assets/csr/csr-diamond-4.png" width="22"> Diamond 3 – 4 |
-| <img src="assets/h2/h2-rank-39.png" width="26"> **39** | 1382&nbsp;–&nbsp;1418 | <img src="assets/csr/csr-diamond-4.png" width="22"> <img src="assets/csr/csr-diamond-5.png" width="22"> Diamond 4 – 5 |
-| <img src="assets/h2/h2-rank-40.png" width="26"> **40** | 1419&nbsp;–&nbsp;1454 | <img src="assets/csr/csr-diamond-5.png" width="22"> <img src="assets/csr/csr-diamond-6.png" width="22"> Diamond 5 – 6 |
-| <img src="assets/h2/h2-rank-41.png" width="26"> **41** | 1455&nbsp;–&nbsp;1490 | <img src="assets/csr/csr-diamond-6.png" width="22"> Diamond 6 |
-| <img src="assets/h2/h2-rank-42.png" width="26"> **42** | 1491&nbsp;–&nbsp;1527 | <img src="assets/csr/csr-diamond-6.png" width="22"> <img src="assets/csr/csr-onyx.png" width="22"> Diamond 6 – Onyx |
-| <img src="assets/h2/h2-rank-43.png" width="26"> **43** | 1528&nbsp;–&nbsp;1563 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
-| <img src="assets/h2/h2-rank-44.png" width="26"> **44** | 1564&nbsp;–&nbsp;1599 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
-| <img src="assets/h2/h2-rank-45.png" width="26"> **45** | 1600&nbsp;–&nbsp;1659 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
-| <img src="assets/h2/h2-rank-46.png" width="26"> **46** | 1660&nbsp;–&nbsp;1719 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
-| <img src="assets/h2/h2-rank-47.png" width="26"> **47** | 1720&nbsp;–&nbsp;1779 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
-| <img src="assets/h2/h2-rank-48.png" width="26"> **48** | 1780&nbsp;–&nbsp;1839 | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
-| <img src="assets/h2/h2-rank-49.png" width="26"> **49** | 1840&nbsp;–&nbsp;1899 | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
-| <img src="assets/h2/h2-rank-50.png" width="26"> **50** | 1900+ | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
+| <img src="assets/h2/h2-rank-01.png" width="34"> | 0&nbsp;–&nbsp;36 | <img src="assets/csr/csr-bronze-1.png" width="22"> Bronze 1 |
+| <img src="assets/h2/h2-rank-02.png" width="34"> | 37&nbsp;–&nbsp;72 | <img src="assets/csr/csr-bronze-1.png" width="22"> <img src="assets/csr/csr-bronze-2.png" width="22"> Bronze 1 – 2 |
+| <img src="assets/h2/h2-rank-03.png" width="34"> | 73&nbsp;–&nbsp;109 | <img src="assets/csr/csr-bronze-2.png" width="22"> <img src="assets/csr/csr-bronze-3.png" width="22"> Bronze 2 – 3 |
+| <img src="assets/h2/h2-rank-04.png" width="34"> | 110&nbsp;–&nbsp;145 | <img src="assets/csr/csr-bronze-3.png" width="22"> Bronze 3 |
+| <img src="assets/h2/h2-rank-05.png" width="34"> | 146&nbsp;–&nbsp;181 | <img src="assets/csr/csr-bronze-3.png" width="22"> <img src="assets/csr/csr-bronze-4.png" width="22"> Bronze 3 – 4 |
+| <img src="assets/h2/h2-rank-06.png" width="34"> | 182&nbsp;–&nbsp;218 | <img src="assets/csr/csr-bronze-4.png" width="22"> <img src="assets/csr/csr-bronze-5.png" width="22"> Bronze 4 – 5 |
+| <img src="assets/h2/h2-rank-07.png" width="34"> | 219&nbsp;–&nbsp;254 | <img src="assets/csr/csr-bronze-5.png" width="22"> <img src="assets/csr/csr-bronze-6.png" width="22"> Bronze 5 – 6 |
+| <img src="assets/h2/h2-rank-08.png" width="34"> | 255&nbsp;–&nbsp;290 | <img src="assets/csr/csr-bronze-6.png" width="22"> Bronze 6 |
+| <img src="assets/h2/h2-rank-09.png" width="34"> | 291&nbsp;–&nbsp;327 | <img src="assets/csr/csr-bronze-6.png" width="22"> <img src="assets/csr/csr-silver-1.png" width="22"> Bronze 6 – Silver 1 |
+| <img src="assets/h2/h2-rank-10.png" width="34"> | 328&nbsp;–&nbsp;363 | <img src="assets/csr/csr-silver-1.png" width="22"> <img src="assets/csr/csr-silver-2.png" width="22"> Silver 1 – 2 |
+| <img src="assets/h2/h2-rank-11.png" width="34"> | 364&nbsp;–&nbsp;399 | <img src="assets/csr/csr-silver-2.png" width="22"> Silver 2 |
+| <img src="assets/h2/h2-rank-12.png" width="34"> | 400&nbsp;–&nbsp;436 | <img src="assets/csr/csr-silver-3.png" width="22"> Silver 3 |
+| <img src="assets/h2/h2-rank-13.png" width="34"> | 437&nbsp;–&nbsp;472 | <img src="assets/csr/csr-silver-3.png" width="22"> <img src="assets/csr/csr-silver-4.png" width="22"> Silver 3 – 4 |
+| <img src="assets/h2/h2-rank-14.png" width="34"> | 473&nbsp;–&nbsp;509 | <img src="assets/csr/csr-silver-4.png" width="22"> <img src="assets/csr/csr-silver-5.png" width="22"> Silver 4 – 5 |
+| <img src="assets/h2/h2-rank-15.png" width="34"> | 510&nbsp;–&nbsp;545 | <img src="assets/csr/csr-silver-5.png" width="22"> Silver 5 |
+| <img src="assets/h2/h2-rank-16.png" width="34"> | 546&nbsp;–&nbsp;581 | <img src="assets/csr/csr-silver-5.png" width="22"> <img src="assets/csr/csr-silver-6.png" width="22"> Silver 5 – 6 |
+| <img src="assets/h2/h2-rank-17.png" width="34"> | 582&nbsp;–&nbsp;618 | <img src="assets/csr/csr-silver-6.png" width="22"> <img src="assets/csr/csr-gold-1.png" width="22"> Silver 6 – Gold 1 |
+| <img src="assets/h2/h2-rank-18.png" width="34"> | 619&nbsp;–&nbsp;654 | <img src="assets/csr/csr-gold-1.png" width="22"> <img src="assets/csr/csr-gold-2.png" width="22"> Gold 1 – 2 |
+| <img src="assets/h2/h2-rank-19.png" width="34"> | 655&nbsp;–&nbsp;690 | <img src="assets/csr/csr-gold-2.png" width="22"> Gold 2 |
+| <img src="assets/h2/h2-rank-20.png" width="34"> | 691&nbsp;–&nbsp;727 | <img src="assets/csr/csr-gold-2.png" width="22"> <img src="assets/csr/csr-gold-3.png" width="22"> Gold 2 – 3 |
+| <img src="assets/h2/h2-rank-21.png" width="34"> | 728&nbsp;–&nbsp;763 | <img src="assets/csr/csr-gold-3.png" width="22"> <img src="assets/csr/csr-gold-4.png" width="22"> Gold 3 – 4 |
+| <img src="assets/h2/h2-rank-22.png" width="34"> | 764&nbsp;–&nbsp;799 | <img src="assets/csr/csr-gold-4.png" width="22"> Gold 4 |
+| <img src="assets/h2/h2-rank-23.png" width="34"> | 800&nbsp;–&nbsp;836 | <img src="assets/csr/csr-gold-5.png" width="22"> Gold 5 |
+| <img src="assets/h2/h2-rank-24.png" width="34"> | 837&nbsp;–&nbsp;872 | <img src="assets/csr/csr-gold-5.png" width="22"> <img src="assets/csr/csr-gold-6.png" width="22"> Gold 5 – 6 |
+| <img src="assets/h2/h2-rank-25.png" width="34"> | 873&nbsp;–&nbsp;909 | <img src="assets/csr/csr-gold-6.png" width="22"> <img src="assets/csr/csr-platinum-1.png" width="22"> Gold 6 – Platinum 1 |
+| <img src="assets/h2/h2-rank-26.png" width="34"> | 910&nbsp;–&nbsp;945 | <img src="assets/csr/csr-platinum-1.png" width="22"> Platinum 1 |
+| <img src="assets/h2/h2-rank-27.png" width="34"> | 946&nbsp;–&nbsp;981 | <img src="assets/csr/csr-platinum-1.png" width="22"> <img src="assets/csr/csr-platinum-2.png" width="22"> Platinum 1 – 2 |
+| <img src="assets/h2/h2-rank-28.png" width="34"> | 982&nbsp;–&nbsp;1018 | <img src="assets/csr/csr-platinum-2.png" width="22"> <img src="assets/csr/csr-platinum-3.png" width="22"> Platinum 2 – 3 |
+| <img src="assets/h2/h2-rank-29.png" width="34"> | 1019&nbsp;–&nbsp;1054 | <img src="assets/csr/csr-platinum-3.png" width="22"> <img src="assets/csr/csr-platinum-4.png" width="22"> Platinum 3 – 4 |
+| <img src="assets/h2/h2-rank-30.png" width="34"> | 1055&nbsp;–&nbsp;1090 | <img src="assets/csr/csr-platinum-4.png" width="22"> Platinum 4 |
+| <img src="assets/h2/h2-rank-31.png" width="34"> | 1091&nbsp;–&nbsp;1127 | <img src="assets/csr/csr-platinum-4.png" width="22"> <img src="assets/csr/csr-platinum-5.png" width="22"> Platinum 4 – 5 |
+| <img src="assets/h2/h2-rank-32.png" width="34"> | 1128&nbsp;–&nbsp;1163 | <img src="assets/csr/csr-platinum-5.png" width="22"> <img src="assets/csr/csr-platinum-6.png" width="22"> Platinum 5 – 6 |
+| <img src="assets/h2/h2-rank-33.png" width="34"> | 1164&nbsp;–&nbsp;1199 | <img src="assets/csr/csr-platinum-6.png" width="22"> Platinum 6 |
+| <img src="assets/h2/h2-rank-34.png" width="34"> | 1200&nbsp;–&nbsp;1236 | <img src="assets/csr/csr-diamond-1.png" width="22"> Diamond 1 |
+| <img src="assets/h2/h2-rank-35.png" width="34"> | 1237&nbsp;–&nbsp;1272 | <img src="assets/csr/csr-diamond-1.png" width="22"> <img src="assets/csr/csr-diamond-2.png" width="22"> Diamond 1 – 2 |
+| <img src="assets/h2/h2-rank-36.png" width="34"> | 1273&nbsp;–&nbsp;1309 | <img src="assets/csr/csr-diamond-2.png" width="22"> <img src="assets/csr/csr-diamond-3.png" width="22"> Diamond 2 – 3 |
+| <img src="assets/h2/h2-rank-37.png" width="34"> | 1310&nbsp;–&nbsp;1345 | <img src="assets/csr/csr-diamond-3.png" width="22"> Diamond 3 |
+| <img src="assets/h2/h2-rank-38.png" width="34"> | 1346&nbsp;–&nbsp;1381 | <img src="assets/csr/csr-diamond-3.png" width="22"> <img src="assets/csr/csr-diamond-4.png" width="22"> Diamond 3 – 4 |
+| <img src="assets/h2/h2-rank-39.png" width="34"> | 1382&nbsp;–&nbsp;1418 | <img src="assets/csr/csr-diamond-4.png" width="22"> <img src="assets/csr/csr-diamond-5.png" width="22"> Diamond 4 – 5 |
+| <img src="assets/h2/h2-rank-40.png" width="34"> | 1419&nbsp;–&nbsp;1454 | <img src="assets/csr/csr-diamond-5.png" width="22"> <img src="assets/csr/csr-diamond-6.png" width="22"> Diamond 5 – 6 |
+| <img src="assets/h2/h2-rank-41.png" width="34"> | 1455&nbsp;–&nbsp;1490 | <img src="assets/csr/csr-diamond-6.png" width="22"> Diamond 6 |
+| <img src="assets/h2/h2-rank-42.png" width="34"> | 1491&nbsp;–&nbsp;1527 | <img src="assets/csr/csr-diamond-6.png" width="22"> <img src="assets/csr/csr-onyx.png" width="22"> Diamond 6 – Onyx |
+| <img src="assets/h2/h2-rank-43.png" width="34"> | 1528&nbsp;–&nbsp;1563 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
+| <img src="assets/h2/h2-rank-44.png" width="34"> | 1564&nbsp;–&nbsp;1599 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
+| <img src="assets/h2/h2-rank-45.png" width="34"> | 1600&nbsp;–&nbsp;1659 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
+| <img src="assets/h2/h2-rank-46.png" width="34"> | 1660&nbsp;–&nbsp;1719 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
+| <img src="assets/h2/h2-rank-47.png" width="34"> | 1720&nbsp;–&nbsp;1779 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
+| <img src="assets/h2/h2-rank-48.png" width="34"> | 1780&nbsp;–&nbsp;1839 | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
+| <img src="assets/h2/h2-rank-49.png" width="34"> | 1840&nbsp;–&nbsp;1899 | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
+| <img src="assets/h2/h2-rank-50.png" width="34"> | 1900+ | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
 
 A rank that spans two sub-ranks (rank 2 is Bronze 1–2, for example) is simply one rank being wider than one 50-CSR sub-rank. **Champion** is not on this ladder as a rank of its own: from 1780 CSR — rank 48 — the top ten players on the board wear the Champion crest over their Onyx rating.
 
