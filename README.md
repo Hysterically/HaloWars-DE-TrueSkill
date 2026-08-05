@@ -19,9 +19,13 @@
 
 Full notes for each version are on the [Releases](../../releases) page. Updating is simple: uninstall the old copy, delete the folder, download the new one — see [Updating](#updating). Your ratings and match history are never at risk; they are not kept in that folder.
 
+## Why this exists
+
 The original Halo Wars (2009) was built around a **TrueSkill™-powered ranked ladder** — skill ratings, a public leaderboard, and the climb was half the game. When **Halo Wars: Definitive Edition** was released, that entire system was removed: no skill ratings, no leaderboard, no match history. **This project is a rebuild of that ranked experience** for the Microsoft Store version — an in-game overlay backed by a community ladder, restoring what Definitive Edition left out and modernizing it with TrueSkill 2.
 
 This ladder is built for — and used by — the **high-level Halo Wars: DE competitive community**: the players still competing seriously are the ones being rated on it.
+
+Every feature below exists for a reason — either something the original game had and Definitive Edition dropped, or something DE has been getting wrong since launch. Each one says which.
 
 ---
 
@@ -33,9 +37,13 @@ This ladder is built for — and used by — the **high-level Halo Wars: DE comp
 - Two rank display styles, switchable in-game: modern **tier emblems** or the classic **Halo 2 1–50** numbered ranks.
 - Monthly wins boards alongside the lifetime skill ladders.
 
+**Why:** This is the part Definitive Edition took away. The 2009 game had a TrueSkill ladder and a public leaderboard; DE shipped without either, and the competitive community has wanted it back ever since — a ranked scene with nothing to rank is just customs. So the ladder is rebuilt on the same rating model the original ran on, with **TrueSkill 2** — the algorithm Microsoft moved to for Halo 5 and Infinite — as the main board, so the climb means what it used to and the math is better than it was.
+
 ### 📜 Match history
 - Every ranked game recorded automatically: map, teams, leaders, scores, duration, and per-player rating changes.
 - Rich in-overlay match cards with map thumbnails, leader portraits, and result icons — filter by game type, playlist, map, or player.
+
+**Why:** DE keeps no record of a game you played. The post-game screen is the only place the result ever exists, and once you leave it, it is gone — no history, no head-to-head, no way to see where a rating change came from. A ladder nobody can audit is a ladder nobody trusts, so every rated game is stored in full: the receipts for each rating movement, and a record of the community's competitive history that outlasts the session it happened in.
 
 <p align="center">
   <img src="assets/maps/blood_gulch.jpg" width="150">&nbsp;
@@ -57,17 +65,25 @@ This ladder is built for — and used by — the **high-level Halo Wars: DE comp
 ### 🎖️ In-game rank icons
 - The game itself draws rank art next to players in the **pre-game lobby and the in-match scoreboard** — your opponents' ranks visible at a glance, using the classic 1–50 numerals.
 
+**Why:** Seeing who you are actually up against — before the first base goes down — was part of what made the original ladder feel like a ladder. In DE's lobby every player looks identical, whether they are on their tenth game or in the top ten. Ranks belong where the decision is made, so they are drawn inside the game next to each player instead of behind an alt-tab to a website.
+
 ### 🌐 PC ↔ Xbox custom lobbies
 - Cross-play custom-game lobbies between PC (Microsoft Store) and Xbox players: search for Xbox-hosted lobbies and advertise your own PC lobby to Xbox friends.
 
+**Why:** Halo Wars: DE has had cross-platform problems since the day it launched — PC and Xbox players have never been able to reliably find each other's games, and the two halves of the community ended up playing separately. That split hurts far more than it would in a big game: the active competitive population is small, and cutting it in two makes a full lobby harder to fill on both sides. This makes PC and Xbox lobbies visible to each other so the community can play as one pool again.
+
 ### ⚡ FPS cap control
 - Raise the game's frame-rate cap: 60 / 120 / 240 / 360 FPS, plus a built-in frame-rate meter. No config files, one hotkey.
+
+**Why:** The frame-rate cap is the part of this game that has aged worst. Even 120 FPS is well short of what a current GPU and a 144/240/360 Hz monitor will comfortably do on a title this old — a 2009 game is not what is straining your PC — and the difference shows immediately in camera panning and unit movement. The hardware is not the limit here; the cap is. So the cap is exposed directly — one hotkey, no config-file editing — with a frame-rate meter to confirm the new one actually took.
 
 ---
 
 ## How the ratings work
 
 Two rating systems run side by side over the same match history. Both are *earned in real matches only* — there is no placement quiz, and ratings can't be edited by anyone, including us.
+
+**Why two:** classic **TrueSkill** is kept because it is exactly what the 2009 ladder ran on — a large part of the point here is that the original rating still exists and still means what it meant. **TrueSkill 2** is the recommended board because it is what Microsoft built after a decade of actually running TrueSkill on Halo: by its own paper it settles on a player's real level in fewer games and predicts results more accurately, and it is the model behind modern Halo ranked play. Neither is an invention of ours — both are published Microsoft Research systems implemented from the papers, so the ladder can be checked rather than taken on trust.
 
 ### TrueSkill™
 
@@ -106,6 +122,8 @@ Prefer the classic ladder? Switch the display to **Halo 2 1–50** ranks (in the
   <img src="assets/h2/h2-rank-45.png" width="56">&nbsp;
   <img src="assets/h2/h2-rank-50.png" width="56">
 </p>
+
+**Why offer it at all:** the numbered ladder is the rank system this community grew up climbing, and a single number says something a tier badge cannot — Diamond 3 tells you roughly where you sit, a 43 tells you exactly. The community was split on which it preferred, so rather than pick one, both are a single setting apart — and neither is a separate rating. It is the same CSR, drawn two ways.
 
 Just like the original, the climb gets steeper near the top: ranks **1–44** cost about **36 CSR** each, ranks **45–49** cost **60**, and **50** opens at 1900 CSR. Here is the whole ladder against the tier system — every rank, its CSR, and the tier you wear at that rank:
 
