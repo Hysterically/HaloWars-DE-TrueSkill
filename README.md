@@ -4,9 +4,20 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.1 — the community leaderboard, built in](../../releases/latest)
+> ### ⬇️ [Download v1.1.4 — the community leaderboard, built in](../../releases/latest)
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation).
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
+
+### What each update did
+
+- **v1.1.4** — the UNRANKED badge now names *every* player keeping a match out of the ratings, not just the first one.
+- **v1.1.3** — the lobby rank icons switch on instantly instead of needing a restart, and other players' games show up on the leaderboard up to 6× sooner.
+- **v1.1.2** — fixed settings and community sync silently failing when the install path contains non-English characters.
+- **v1.1.1** — startup diagnostics for the in-game rank icons, so a failure to draw them can be traced.
+- **v1.1** — the community leaderboard built in: the shared match history downloads on first launch and your games upload automatically.
+- **v1.0** — first public release: TrueSkill and CSR ratings, match history, and in-game rank icons.
+
+Full notes for each version are on the [Releases](../../releases) page. Updating is simple: uninstall the old copy, delete the folder, download the new one — see [Updating](#updating). Your ratings and match history are never at risk; they are not kept in that folder.
 
 The original Halo Wars (2009) was built around a **TrueSkill™-powered ranked ladder** — skill ratings, a public leaderboard, and the climb was half the game. When **Halo Wars: Definitive Edition** was released, that entire system was removed: no skill ratings, no leaderboard, no match history. **This project is a rebuild of that ranked experience** for the Microsoft Store version — an in-game overlay backed by a community ladder, restoring what Definitive Edition left out and modernizing it with TrueSkill 2.
 
@@ -96,13 +107,62 @@ Prefer the classic ladder? Switch the display to **Halo 2 1–50** ranks (in the
   <img src="assets/h2/h2-rank-50.png" width="56">
 </p>
 
-Just like the original, the climb gets steeper near the top:
+Just like the original, the climb gets steeper near the top: ranks **1–44** cost about **36 CSR** each, ranks **45–49** cost **60**, and **50** opens at 1900 CSR. Here is the whole ladder against the tier system — every rank, its CSR, and the tier you wear at that rank:
 
-| CSR | Halo 2 rank |
-|---|---|
-| 0 – 1599 | 1 – 44 (≈ every 36 CSR) |
-| 1600 – 1899 | 45 – 49 (every 60 CSR) |
-| 1900+ | **50** |
+| Halo 2 rank | CSR | CSR tier |
+|:--|:--|:--|
+| <img src="assets/h2/h2-rank-01.png" width="26"> **1** | 0&nbsp;–&nbsp;36 | <img src="assets/csr/csr-bronze-1.png" width="22"> Bronze 1 |
+| <img src="assets/h2/h2-rank-02.png" width="26"> **2** | 37&nbsp;–&nbsp;72 | <img src="assets/csr/csr-bronze-1.png" width="22"> <img src="assets/csr/csr-bronze-2.png" width="22"> Bronze 1 – 2 |
+| <img src="assets/h2/h2-rank-03.png" width="26"> **3** | 73&nbsp;–&nbsp;109 | <img src="assets/csr/csr-bronze-2.png" width="22"> <img src="assets/csr/csr-bronze-3.png" width="22"> Bronze 2 – 3 |
+| <img src="assets/h2/h2-rank-04.png" width="26"> **4** | 110&nbsp;–&nbsp;145 | <img src="assets/csr/csr-bronze-3.png" width="22"> Bronze 3 |
+| <img src="assets/h2/h2-rank-05.png" width="26"> **5** | 146&nbsp;–&nbsp;181 | <img src="assets/csr/csr-bronze-3.png" width="22"> <img src="assets/csr/csr-bronze-4.png" width="22"> Bronze 3 – 4 |
+| <img src="assets/h2/h2-rank-06.png" width="26"> **6** | 182&nbsp;–&nbsp;218 | <img src="assets/csr/csr-bronze-4.png" width="22"> <img src="assets/csr/csr-bronze-5.png" width="22"> Bronze 4 – 5 |
+| <img src="assets/h2/h2-rank-07.png" width="26"> **7** | 219&nbsp;–&nbsp;254 | <img src="assets/csr/csr-bronze-5.png" width="22"> <img src="assets/csr/csr-bronze-6.png" width="22"> Bronze 5 – 6 |
+| <img src="assets/h2/h2-rank-08.png" width="26"> **8** | 255&nbsp;–&nbsp;290 | <img src="assets/csr/csr-bronze-6.png" width="22"> Bronze 6 |
+| <img src="assets/h2/h2-rank-09.png" width="26"> **9** | 291&nbsp;–&nbsp;327 | <img src="assets/csr/csr-bronze-6.png" width="22"> <img src="assets/csr/csr-silver-1.png" width="22"> Bronze 6 – Silver 1 |
+| <img src="assets/h2/h2-rank-10.png" width="26"> **10** | 328&nbsp;–&nbsp;363 | <img src="assets/csr/csr-silver-1.png" width="22"> <img src="assets/csr/csr-silver-2.png" width="22"> Silver 1 – 2 |
+| <img src="assets/h2/h2-rank-11.png" width="26"> **11** | 364&nbsp;–&nbsp;399 | <img src="assets/csr/csr-silver-2.png" width="22"> Silver 2 |
+| <img src="assets/h2/h2-rank-12.png" width="26"> **12** | 400&nbsp;–&nbsp;436 | <img src="assets/csr/csr-silver-3.png" width="22"> Silver 3 |
+| <img src="assets/h2/h2-rank-13.png" width="26"> **13** | 437&nbsp;–&nbsp;472 | <img src="assets/csr/csr-silver-3.png" width="22"> <img src="assets/csr/csr-silver-4.png" width="22"> Silver 3 – 4 |
+| <img src="assets/h2/h2-rank-14.png" width="26"> **14** | 473&nbsp;–&nbsp;509 | <img src="assets/csr/csr-silver-4.png" width="22"> <img src="assets/csr/csr-silver-5.png" width="22"> Silver 4 – 5 |
+| <img src="assets/h2/h2-rank-15.png" width="26"> **15** | 510&nbsp;–&nbsp;545 | <img src="assets/csr/csr-silver-5.png" width="22"> Silver 5 |
+| <img src="assets/h2/h2-rank-16.png" width="26"> **16** | 546&nbsp;–&nbsp;581 | <img src="assets/csr/csr-silver-5.png" width="22"> <img src="assets/csr/csr-silver-6.png" width="22"> Silver 5 – 6 |
+| <img src="assets/h2/h2-rank-17.png" width="26"> **17** | 582&nbsp;–&nbsp;618 | <img src="assets/csr/csr-silver-6.png" width="22"> <img src="assets/csr/csr-gold-1.png" width="22"> Silver 6 – Gold 1 |
+| <img src="assets/h2/h2-rank-18.png" width="26"> **18** | 619&nbsp;–&nbsp;654 | <img src="assets/csr/csr-gold-1.png" width="22"> <img src="assets/csr/csr-gold-2.png" width="22"> Gold 1 – 2 |
+| <img src="assets/h2/h2-rank-19.png" width="26"> **19** | 655&nbsp;–&nbsp;690 | <img src="assets/csr/csr-gold-2.png" width="22"> Gold 2 |
+| <img src="assets/h2/h2-rank-20.png" width="26"> **20** | 691&nbsp;–&nbsp;727 | <img src="assets/csr/csr-gold-2.png" width="22"> <img src="assets/csr/csr-gold-3.png" width="22"> Gold 2 – 3 |
+| <img src="assets/h2/h2-rank-21.png" width="26"> **21** | 728&nbsp;–&nbsp;763 | <img src="assets/csr/csr-gold-3.png" width="22"> <img src="assets/csr/csr-gold-4.png" width="22"> Gold 3 – 4 |
+| <img src="assets/h2/h2-rank-22.png" width="26"> **22** | 764&nbsp;–&nbsp;799 | <img src="assets/csr/csr-gold-4.png" width="22"> Gold 4 |
+| <img src="assets/h2/h2-rank-23.png" width="26"> **23** | 800&nbsp;–&nbsp;836 | <img src="assets/csr/csr-gold-5.png" width="22"> Gold 5 |
+| <img src="assets/h2/h2-rank-24.png" width="26"> **24** | 837&nbsp;–&nbsp;872 | <img src="assets/csr/csr-gold-5.png" width="22"> <img src="assets/csr/csr-gold-6.png" width="22"> Gold 5 – 6 |
+| <img src="assets/h2/h2-rank-25.png" width="26"> **25** | 873&nbsp;–&nbsp;909 | <img src="assets/csr/csr-gold-6.png" width="22"> <img src="assets/csr/csr-platinum-1.png" width="22"> Gold 6 – Platinum 1 |
+| <img src="assets/h2/h2-rank-26.png" width="26"> **26** | 910&nbsp;–&nbsp;945 | <img src="assets/csr/csr-platinum-1.png" width="22"> Platinum 1 |
+| <img src="assets/h2/h2-rank-27.png" width="26"> **27** | 946&nbsp;–&nbsp;981 | <img src="assets/csr/csr-platinum-1.png" width="22"> <img src="assets/csr/csr-platinum-2.png" width="22"> Platinum 1 – 2 |
+| <img src="assets/h2/h2-rank-28.png" width="26"> **28** | 982&nbsp;–&nbsp;1018 | <img src="assets/csr/csr-platinum-2.png" width="22"> <img src="assets/csr/csr-platinum-3.png" width="22"> Platinum 2 – 3 |
+| <img src="assets/h2/h2-rank-29.png" width="26"> **29** | 1019&nbsp;–&nbsp;1054 | <img src="assets/csr/csr-platinum-3.png" width="22"> <img src="assets/csr/csr-platinum-4.png" width="22"> Platinum 3 – 4 |
+| <img src="assets/h2/h2-rank-30.png" width="26"> **30** | 1055&nbsp;–&nbsp;1090 | <img src="assets/csr/csr-platinum-4.png" width="22"> Platinum 4 |
+| <img src="assets/h2/h2-rank-31.png" width="26"> **31** | 1091&nbsp;–&nbsp;1127 | <img src="assets/csr/csr-platinum-4.png" width="22"> <img src="assets/csr/csr-platinum-5.png" width="22"> Platinum 4 – 5 |
+| <img src="assets/h2/h2-rank-32.png" width="26"> **32** | 1128&nbsp;–&nbsp;1163 | <img src="assets/csr/csr-platinum-5.png" width="22"> <img src="assets/csr/csr-platinum-6.png" width="22"> Platinum 5 – 6 |
+| <img src="assets/h2/h2-rank-33.png" width="26"> **33** | 1164&nbsp;–&nbsp;1199 | <img src="assets/csr/csr-platinum-6.png" width="22"> Platinum 6 |
+| <img src="assets/h2/h2-rank-34.png" width="26"> **34** | 1200&nbsp;–&nbsp;1236 | <img src="assets/csr/csr-diamond-1.png" width="22"> Diamond 1 |
+| <img src="assets/h2/h2-rank-35.png" width="26"> **35** | 1237&nbsp;–&nbsp;1272 | <img src="assets/csr/csr-diamond-1.png" width="22"> <img src="assets/csr/csr-diamond-2.png" width="22"> Diamond 1 – 2 |
+| <img src="assets/h2/h2-rank-36.png" width="26"> **36** | 1273&nbsp;–&nbsp;1309 | <img src="assets/csr/csr-diamond-2.png" width="22"> <img src="assets/csr/csr-diamond-3.png" width="22"> Diamond 2 – 3 |
+| <img src="assets/h2/h2-rank-37.png" width="26"> **37** | 1310&nbsp;–&nbsp;1345 | <img src="assets/csr/csr-diamond-3.png" width="22"> Diamond 3 |
+| <img src="assets/h2/h2-rank-38.png" width="26"> **38** | 1346&nbsp;–&nbsp;1381 | <img src="assets/csr/csr-diamond-3.png" width="22"> <img src="assets/csr/csr-diamond-4.png" width="22"> Diamond 3 – 4 |
+| <img src="assets/h2/h2-rank-39.png" width="26"> **39** | 1382&nbsp;–&nbsp;1418 | <img src="assets/csr/csr-diamond-4.png" width="22"> <img src="assets/csr/csr-diamond-5.png" width="22"> Diamond 4 – 5 |
+| <img src="assets/h2/h2-rank-40.png" width="26"> **40** | 1419&nbsp;–&nbsp;1454 | <img src="assets/csr/csr-diamond-5.png" width="22"> <img src="assets/csr/csr-diamond-6.png" width="22"> Diamond 5 – 6 |
+| <img src="assets/h2/h2-rank-41.png" width="26"> **41** | 1455&nbsp;–&nbsp;1490 | <img src="assets/csr/csr-diamond-6.png" width="22"> Diamond 6 |
+| <img src="assets/h2/h2-rank-42.png" width="26"> **42** | 1491&nbsp;–&nbsp;1527 | <img src="assets/csr/csr-diamond-6.png" width="22"> <img src="assets/csr/csr-onyx.png" width="22"> Diamond 6 – Onyx |
+| <img src="assets/h2/h2-rank-43.png" width="26"> **43** | 1528&nbsp;–&nbsp;1563 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
+| <img src="assets/h2/h2-rank-44.png" width="26"> **44** | 1564&nbsp;–&nbsp;1599 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
+| <img src="assets/h2/h2-rank-45.png" width="26"> **45** | 1600&nbsp;–&nbsp;1659 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
+| <img src="assets/h2/h2-rank-46.png" width="26"> **46** | 1660&nbsp;–&nbsp;1719 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
+| <img src="assets/h2/h2-rank-47.png" width="26"> **47** | 1720&nbsp;–&nbsp;1779 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
+| <img src="assets/h2/h2-rank-48.png" width="26"> **48** | 1780&nbsp;–&nbsp;1839 | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
+| <img src="assets/h2/h2-rank-49.png" width="26"> **49** | 1840&nbsp;–&nbsp;1899 | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
+| <img src="assets/h2/h2-rank-50.png" width="26"> **50** | 1900+ | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
+
+A rank that spans two sub-ranks (rank 2 is Bronze 1–2, for example) is simply one rank being wider than one 50-CSR sub-rank. **Champion** is not on this ladder as a rank of its own: from 1780 CSR — rank 48 — the top ten players on the board wear the Champion crest over their Onyx rating.
 
 ### Example: a new player's first session
 
@@ -157,7 +217,7 @@ Downloading the overlay connects you to the community history immediately — th
 
 ## Installation
 
-1. Download the latest release from the [Releases](../../releases) page and unzip it anywhere you like. Keep `HaloWarsStatsLoader.exe` and `MSTrueSkill.dll` **together in the same folder**.
+1. Download the latest release from the [Releases](../../releases) page and unzip it anywhere you like. Keep `HaloWarsStatsLoader.exe`, `MSTrueSkill.dll` and `ms_trueskill_config.default.txt` **together in the same folder**. (Your own settings file, `ms_trueskill_config.txt`, is created next to them on first launch.)
 2. Double-click **`Install Auto-Load.bat`** once — no terminal, no prompt, no administrator. (Prefer the command line? `HaloWarsStatsLoader.exe --install` does the same thing.)
 3. Start Halo Wars from the Xbox app as usual. The overlay appears by itself a few seconds in — press **INSERT** to show or hide it.
 
@@ -168,6 +228,21 @@ To stop it loading automatically, double-click `Uninstall Auto-Load.bat` (or run
 `HaloWarsStatsLoader.exe --status` shows what is currently set up, and `--inject` loads the overlay into a game that is already running if you would rather not install anything at all.
 
 > Moving the folder after installing breaks it, because the autostart entry records the exact path. Run `--install` again from the new location.
+
+---
+
+## Updating
+
+When a new version comes out, start clean. Nothing to merge, nothing to overwrite — two double-clicks and a delete:
+
+1. Close Halo Wars.
+2. In your **old** folder, double-click `Uninstall Auto-Load.bat`.
+3. Delete the old folder.
+4. Download the new release, unzip it anywhere, and double-click `Install Auto-Load.bat`.
+
+**Your ratings and match history are safe.** They are not stored in that folder — the overlay keeps them elsewhere and picks them straight back up, and the community leaderboard is downloaded again on first launch either way.
+
+The one thing you lose is your **in-game settings**, which go back to defaults. So if you had the lobby rank icons switched on, turn them back on once afterwards: **Settings → "Show CSR ranks on lobby players"**. It takes effect immediately, no restart.
 
 ---
 
