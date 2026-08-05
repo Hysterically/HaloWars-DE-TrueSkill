@@ -21,7 +21,7 @@ Full notes for each version are on the [Releases](../../releases) page. Updating
 
 ## Why this exists
 
-The original Halo Wars (2009) was built around a **TrueSkill™-powered ranked ladder** — skill ratings, a public leaderboard, and the climb was half the game. When **Halo Wars: Definitive Edition** was released, that entire system was removed: no skill ratings, no leaderboard, no match history. **This project is a rebuild of that ranked experience** for the Microsoft Store version — an in-game overlay backed by a community ladder, restoring what Definitive Edition left out and modernizing it with TrueSkill 2.
+The original Halo Wars (2009) was built around a **TrueSkill™-powered ranked ladder** — skill ratings, a public leaderboard, and the climb was half the game. When **Halo Wars: Definitive Edition** was released, that entire system went with it. What DE tracks instead is a **monthly wins count** — and that is the whole of it: no skill rating, no per-match history, and it wipes every month. **This project is a rebuild of that ranked experience** for the Microsoft Store version — an in-game overlay backed by a community ladder, restoring what Definitive Edition left out and modernizing it with TrueSkill 2.
 
 This ladder is built for — and used by — the **high-level Halo Wars: DE competitive community**: the players still competing seriously are the ones being rated on it.
 
@@ -37,13 +37,13 @@ Every feature below exists for a reason — either something the original game h
 - Two rank display styles, switchable in-game: modern **tier emblems** or the classic **Halo 2 1–50** numbered ranks.
 - Monthly wins boards alongside the lifetime skill ladders.
 
-**Why:** This is the part Definitive Edition took away. The 2009 game had a TrueSkill ladder and a public leaderboard; DE shipped without either, and the competitive community has wanted it back ever since — a ranked scene with nothing to rank is just customs. So the ladder is rebuilt on the same rating model the original ran on, with **TrueSkill 2** — the algorithm Microsoft moved to for Halo 5 and Infinite — as the main board, so the climb means what it used to and the math is better than it was.
+**Why:** This is the part Definitive Edition took away. All DE ranks you on is **wins this month** — a board that measures how much you played rather than how well, that a grinder tops over a better player, and that wipes clean every month so nothing you do accumulates into anything. The 2009 game had a real TrueSkill ladder and a public leaderboard, and the competitive community has wanted it back ever since — a ranked scene with nothing to rank is just customs. So the ladder is rebuilt on the rating model the original ran on, with **TrueSkill 2** — the algorithm Microsoft moved to for Halo 5 and Infinite — as the main board, so the climb means what it used to and the math is better than it was. The monthly wins boards are kept too, since that is the one board DE players already have; here they simply sit next to a rating that measures skill and never resets.
 
 ### 📜 Match history
 - Every ranked game recorded automatically: map, teams, leaders, scores, duration, and per-player rating changes.
 - Rich in-overlay match cards with map thumbnails, leader portraits, and result icons — filter by game type, playlist, map, or player.
 
-**Why:** DE keeps no record of a game you played. The post-game screen is the only place the result ever exists, and once you leave it, it is gone — no history, no head-to-head, no way to see where a rating change came from. A ladder nobody can audit is a ladder nobody trusts, so every rated game is stored in full: the receipts for each rating movement, and a record of the community's competitive history that outlasts the session it happened in.
+**Why:** DE counts your wins for the month and keeps nothing else — not who you beat, not what you played, not how it went. The individual game leaves no trace: the post-game screen is the only place the result ever exists, and once you leave it, it is gone — no history, no head-to-head, no way to see where a rating change came from. A ladder nobody can audit is a ladder nobody trusts, so every rated game is stored in full: the receipts for each rating movement, and a record of the community's competitive history that outlasts the session it happened in.
 
 <p align="center">
   <img src="assets/maps/blood_gulch.jpg" width="150">&nbsp;
