@@ -77,11 +77,11 @@ CSR runs on **TrueSkill 2** — the successor algorithm Microsoft designed for H
 | <img src="assets/csr/csr-platinum-1.png" width="32" align="center"> **Platinum 1–6** | 900 – 1199 |
 | <img src="assets/csr/csr-diamond-1.png" width="32" align="center"> **Diamond 1–6** | 1200 – 1499 |
 | <img src="assets/csr/csr-onyx.png" width="32" align="center"> **Onyx** | 1500+ (shows your exact CSR) |
-| <img src="assets/csr/csr-champion.png" width="32" align="center"> **Champion** | Top players on the leaderboard at 1600+ |
+| <img src="assets/csr/csr-champion.png" width="32" align="center"> **Champion** | Top ten on the leaderboard at 1780+ |
 
 *The actual tier emblems the overlay and leaderboards display.*
 
-Everyone starts at CSR 0 with maximum uncertainty. Like TrueSkill, early games move you hundreds of CSR at a time while the system finds your level; once established, a typical match moves you a few dozen. **Champion is not a CSR threshold you can camp** — it is an accolade for the very top of the board, recalculated as the leaderboard changes.
+Everyone starts at CSR 0 with maximum uncertainty. Like TrueSkill, early games move you hundreds of CSR at a time while the system finds your level; once established, a typical match moves you a few dozen. **Champion is not a CSR threshold you can camp** — it is an accolade worn by the **top ten players who have also reached 1780 CSR**, recalculated as the leaderboard changes. Both conditions apply: 1780 alone does not crown you if eleven people sit above you, and a top-ten seat does not crown you below 1780. A Champion is still Onyx-rated underneath. (1780 is also where rank 48 opens on the 1–50 ladder below.)
 
 ### Halo 2 style: ranks 1–50
 
