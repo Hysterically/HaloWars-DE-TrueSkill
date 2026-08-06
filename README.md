@@ -4,12 +4,15 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.1.5 — the community leaderboard, built in](../../releases/latest)
-> Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation).
+> ### ⬇️ [Download v1.1.8 — it updates itself from here on](../../releases/latest)
+> Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation). This is the **last download you'll ever need**: from now on the overlay offers each new version in-game, one click.
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
 ### What each update did
 
+- **v1.1.8** — the Update button now sits next to the version number at the bottom of the Settings tab, and double-clicking `HaloWarsStatsLoader.exe` now explains to use the `.bat` scripts instead of dumping a flag reference.
+- **v1.1.7** — first release delivered through the in-game updater itself.
+- **v1.1.6** — **the overlay updates itself from now on**: when a new version is out, one click in the Settings tab installs it — nothing to unzip, nothing to reinstall, settings kept. `Update.bat` does the same outside the game.
 - **v1.1.5** — Match History shows each team's average rank next to the win/loss mark, so you can see how the two sides matched up at a glance.
 - **v1.1.4** — the UNRANKED badge now names *every* player keeping a match out of the ratings, not just the first one.
 - **v1.1.3** — the lobby rank icons switch on instantly instead of needing a restart, and other players' games show up on the leaderboard up to 6× sooner.
@@ -18,7 +21,7 @@
 - **v1.1** — the community leaderboard built in: the shared match history downloads on first launch and your games upload automatically.
 - **v1.0** — first public release: TrueSkill and CSR ratings, match history, and in-game rank icons.
 
-Full notes for each version are on the [Releases](../../releases) page. Updating is simple: uninstall the old copy, delete the folder, download the new one — see [Updating](#updating). Your ratings and match history are never at risk; they are not kept in that folder.
+Full notes for each version are on the [Releases](../../releases) page. Updating is one click from inside the game — see [Updating](#updating). Your ratings and match history are never at risk; they are not kept in that folder.
 
 ## Why this exists
 
@@ -253,16 +256,18 @@ To stop it loading automatically, double-click `Uninstall Auto-Load.bat` (or run
 
 ## Updating
 
-When a new version comes out, start clean. Nothing to merge, nothing to overwrite — two double-clicks and a delete:
+From v1.1.6 on, **the overlay updates itself**. When a new version is out, an **Update** button appears next to the version number at the bottom of the Settings tab: click it, let it finish, restart the game. The new files are swapped into your existing folder and your settings are untouched. Not in game? Double-click `Update.bat` in the overlay folder instead — same result.
+
+**On v1.1.5 or older?** Those versions predate the updater, so update by hand one last time — from then on it's the button:
 
 1. Close Halo Wars.
 2. In your **old** folder, double-click `Uninstall Auto-Load.bat`.
 3. Delete the old folder.
 4. Download the new release, unzip it anywhere, and double-click `Install Auto-Load.bat`.
 
-**Your ratings and match history are safe.** They are not stored in that folder — the overlay keeps them elsewhere and picks them straight back up, and the community leaderboard is downloaded again on first launch either way.
+**Your ratings and match history are safe either way.** They are not stored in that folder — the overlay keeps them elsewhere and picks them straight back up, and the community leaderboard is downloaded again on first launch.
 
-The one thing you lose is your **in-game settings**, which go back to defaults. So if you had the lobby rank icons switched on, turn them back on once afterwards: **Settings → "Show CSR ranks on lobby players"**. It takes effect immediately, no restart.
+The manual route resets your **in-game settings** to defaults (the in-game updater keeps them). So if you had the lobby rank icons switched on, turn them back on once afterwards: **Settings → "Show CSR ranks on lobby players"**. It takes effect immediately, no restart.
 
 ---
 
