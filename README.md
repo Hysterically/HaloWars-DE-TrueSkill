@@ -4,12 +4,13 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.1.4 — the community leaderboard, built in](../../releases/latest)
+> ### ⬇️ [Download v1.1.5 — the community leaderboard, built in](../../releases/latest)
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation).
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
 ### What each update did
 
+- **v1.1.5** — Match History shows each team's average rank next to the win/loss mark, so you can see how the two sides matched up at a glance.
 - **v1.1.4** — the UNRANKED badge now names *every* player keeping a match out of the ratings, not just the first one.
 - **v1.1.3** — the lobby rank icons switch on instantly instead of needing a restart, and other players' games show up on the leaderboard up to 6× sooner.
 - **v1.1.2** — fixed settings and community sync silently failing when the install path contains non-English characters.
@@ -42,6 +43,7 @@ Every feature below exists for a reason — either something the original game h
 ### 📜 Match history
 - Every ranked game recorded automatically: map, teams, leaders, scores, duration, and per-player rating changes.
 - Rich in-overlay match cards with map thumbnails, leader portraits, and result icons — filter by game type, playlist, map, or player.
+- Each team's **average rank** on the match card, so you can see how the two sides matched up without reading every player individually. Players with no rating yet are left out of the average rather than dragging it down.
 
 **Why:** DE counts your wins for the month and keeps nothing else — not who you beat, not what you played, not how it went. The individual game leaves no trace: the post-game screen is the only place the result ever exists, and once you leave it, it is gone — no history, no head-to-head, no way to see where a rating change came from. A ladder nobody can audit is a ladder nobody trusts, so every rated game is stored in full: the receipts for each rating movement, and a record of the community's competitive history that outlasts the session it happened in.
 
