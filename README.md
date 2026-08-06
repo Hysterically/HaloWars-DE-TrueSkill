@@ -4,12 +4,13 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.1.8 — it updates itself from here on](../../releases/latest)
+> ### ⬇️ [Download v1.1.9 — it updates itself from here on](../../releases/latest)
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation). This is the **last download you'll ever need**: from now on the overlay offers each new version in-game, one click.
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
 ### What each update did
 
+- **v1.1.9** — fixed a match-upload bug: when the same players played again and the same team won both games, the second game was silently never uploaded — it stayed on the recording PC and never reached the leaderboard. Rematches now always upload.
 - **v1.1.8** — the Update button now sits next to the version number at the bottom of the Settings tab, and double-clicking `HaloWarsStatsLoader.exe` now explains to use the `.bat` scripts instead of dumping a flag reference.
 - **v1.1.7** — first release delivered through the in-game updater itself.
 - **v1.1.6** — **the overlay updates itself from now on**: when a new version is out, one click in the Settings tab installs it — nothing to unzip, nothing to reinstall, settings kept. `Update.bat` does the same outside the game.
