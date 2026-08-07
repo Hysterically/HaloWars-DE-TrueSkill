@@ -8,6 +8,12 @@
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation). This is the **last download you'll ever need**: from now on the overlay offers each new version in-game, one click.
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
+## 🎬 See it in action
+
+https://github.com/user-attachments/assets/828fd36d-3f0d-4c69-944a-2b901892ea03
+
+*2 min 17 sec — the TrueSkill™ and CSR leaderboards, the classic 1-50 ladder, match history, the invite-only Verified Roster, PC/Xbox cross-play, and the community stats site.*
+
 ### What each update did
 
 - **v1.1.9** — fixed a match-upload bug: when the same players played again and the same team won both games, the second game was silently never uploaded — it stayed on the recording PC and never reached the leaderboard. Rematches now always upload.
