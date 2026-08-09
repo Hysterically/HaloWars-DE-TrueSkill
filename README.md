@@ -4,7 +4,7 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.1.12 — it updates itself from here on](../../releases/latest)
+> ### ⬇️ [Download v1.1.13 — it updates itself from here on](../../releases/latest)
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation). This is the **last download you'll ever need**: from now on the overlay offers each new version in-game, one click.
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
@@ -16,6 +16,7 @@ https://github.com/user-attachments/assets/828fd36d-3f0d-4c69-944a-2b901892ea03
 
 ### What each update did
 
+- **v1.1.13** — maintenance: settings-file handling was tidied up — `ms_trueskill_config.txt` now keeps only the entries this overlay actually uses, and entries left behind by older versions are cleaned out automatically. Your settings are kept; no gameplay-visible changes.
 - **v1.1.12** — fixed the Settings tab's Ranked Mode row: its dropdown overlapped the label. All settings rows now line up with a consistent gap.
 - **v1.1.11** — the Newer/Older arrows in the Match History tab stay in a fixed spot when changing pages, so you can click through games without moving the mouse.
 - **v1.1.10** — players not on the Verified Roster keep the game's own rank icon in the lobby and scoreboard instead of showing rank 1 — no rating art is drawn for players whose matches don't move the ladder.
