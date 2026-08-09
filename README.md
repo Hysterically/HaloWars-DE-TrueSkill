@@ -4,7 +4,7 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.1.14 — it updates itself from here on](../../releases/latest)
+> ### ⬇️ [Download v1.1.15 — it updates itself from here on](../../releases/latest)
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation). This is the **last download you'll ever need**: from now on the overlay offers each new version in-game, one click.
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
@@ -16,6 +16,7 @@ https://github.com/user-attachments/assets/828fd36d-3f0d-4c69-944a-2b901892ea03
 
 ### What each update did
 
+- **v1.1.15** — pick your own key for showing/hiding the overlay: **Settings → Gameplay → Menu Key** offers a dropdown of safe choices (Insert stays the default). The change applies immediately and is remembered between sessions.
 - **v1.1.14** — match start and end are now detected from the game's player roster, which is more robust than the previous method — more reliable detection in Deathmatch and after mid-match reconnects. No change to your stats, ratings, or match history.
 - **v1.1.13** — maintenance: settings-file handling was tidied up — `ms_trueskill_config.txt` now keeps only the entries this overlay actually uses, and entries left behind by older versions are cleaned out automatically. Your settings are kept; no gameplay-visible changes.
 - **v1.1.12** — fixed the Settings tab's Ranked Mode row: its dropdown overlapped the label. All settings rows now line up with a consistent gap.
@@ -220,7 +221,7 @@ All of this is visible live on the **[stats site](https://halo-wars-definitive-e
 
 Downloading the overlay connects you to the community history immediately — the leaderboards fill in on first launch, and your finished matches upload automatically. **Being rated** is one step more: the ladder is an invite list (the Verified Roster), and a match moves ratings only when every player in it is verified — that's what keeps the board free of smurfs, farming, and fake results.
 
-1. Open the overlay (**INSERT**) → **Verified Roster** tab → **Request to join** (it fills in your gamertag).
+1. Open the overlay (**INSERT** by default) → **Verified Roster** tab → **Request to join** (it fills in your gamertag).
 2. A community moderator approves the request — once you're on the roster, your ratings recompute automatically, **past games included**.
 3. Until then your games are recorded and visible in Match History, they just don't move anyone's rating yet.
 
@@ -254,7 +255,7 @@ Downloading the overlay connects you to the community history immediately — th
 
 1. Download the latest release from the [Releases](../../releases) page and unzip it anywhere you like. Keep `HaloWarsStatsLoader.exe`, `MSTrueSkill.dll` and `ms_trueskill_config.default.txt` **together in the same folder**. (Your own settings file, `ms_trueskill_config.txt`, is created next to them on first launch.)
 2. Double-click **`Install Auto-Load.bat`** once — no terminal, no prompt, no administrator. (Prefer the command line? `HaloWarsStatsLoader.exe --install` does the same thing.)
-3. Start Halo Wars from the Xbox app as usual. The overlay appears by itself a few seconds in — press **INSERT** to show or hide it.
+3. Start Halo Wars from the Xbox app as usual. The overlay appears by itself a few seconds in — press **INSERT** to show or hide it (you can pick a different key later in **Settings → Gameplay → Menu Key**).
 
 That is the whole setup. From then on it loads every time you play, and nothing is added to the game's own folder.
 
