@@ -4,7 +4,7 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.1.17 — it updates itself from here on](../../releases/latest)
+> ### ⬇️ [Download v1.2.0 — it updates itself from here on](../../releases/latest)
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation). This is the **last download you'll ever need**: from now on the overlay offers each new version in-game, one click.
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
@@ -16,6 +16,7 @@ https://github.com/user-attachments/assets/828fd36d-3f0d-4c69-944a-2b901892ea03
 
 ### What each update did
 
+- **v1.2.0** — **ranked ladder overhaul**: your first 10 rated games per playlist are now **placement matches** (you wear a placement diamond with your progress instead of a rank and join the skill leaderboards when they are done), the rank assigned after placements is **capped at Diamond 3 (CSR 1349)**, and winning as an **85%+ favourite** earns at most **+2 CSR** so lopsided lobbies can't be farmed — see [the rules](#placements-initial-rank-cap-and-the-anti-farm-rule). All three rules are retroactive: the full match history re-rates on first launch, so ratings may shift. Also fixed: veteran players could briefly show as 0/10 placements in Match History right after launch.
 - **v1.1.17** — **critical fix**: opening the Match History tab could instantly close the game if a corrupted match record with an unreadable date had reached your PC through the community sync (one such record circulated on 2026-08-10). Such records now display a dash instead of crashing, are refused by the sync, and any copy already on your PC is cleaned out automatically on first launch — ratings replay once so the leaderboards stay consistent. Skirmish-vs-A.I. games also no longer appear in Match History.
 - **v1.1.16** — Match History: the winner icon could be missing next to players on the winning team when a match ended abruptly (a fast resign-out can leave a teammate's end-of-match state unwritten in the game's memory). The match card now credits the win to the whole team — the same way the ratings have always counted these games.
 - **v1.1.15** — pick your own key for showing/hiding the overlay: **Settings → Gameplay → Menu Key** offers a dropdown of safe choices (Insert stays the default). The change applies immediately and is remembered between sessions.
@@ -61,7 +62,7 @@ Every feature below exists for a reason — either something the original game h
 ### 📜 Match history
 - Every ranked game recorded automatically: map, teams, leaders, scores, duration, and per-player rating changes.
 - Rich in-overlay match cards with map thumbnails, leader portraits, and result icons — filter by game type, playlist, map, or player.
-- Each team's **average rank** on the match card, so you can see how the two sides matched up without reading every player individually. Players with no rating yet are left out of the average rather than dragging it down.
+- Each team's **average rank** on the match card, so you can see how the two sides matched up without reading every player individually. Players with no rating yet are left out of the average rather than dragging it down, and no average is shown at all while a teammate is still in placement matches — a partial number would misstate the side's strength.
 
 **Why:** DE counts your wins for the month and keeps nothing else — not who you beat, not what you played, not how it went. The individual game leaves no trace: the post-game screen is the only place the result ever exists, and once you leave it, it is gone — no history, no head-to-head, no way to see where a rating change came from. A ladder nobody can audit is a ladder nobody trusts, so every rated game is stored in full: the receipts for each rating movement, and a record of the community's competitive history that outlasts the session it happened in.
 
@@ -101,7 +102,7 @@ Every feature below exists for a reason — either something the original game h
 
 ## How the ratings work
 
-Two rating systems run side by side over the same match history. Both are *earned in real matches only* — there is no placement quiz, and ratings can't be edited by anyone, including us.
+Two rating systems run side by side over the same match history. Both are *earned in real matches only*, and ratings can't be edited by anyone, including us. The ladder also runs the three guards every modern ranked playlist has — **placement matches, an initial rank cap, and an anti-farm rule** — described [below](#placements-initial-rank-cap-and-the-anti-farm-rule).
 
 **Why two:** classic **TrueSkill** is kept because it is exactly what the 2009 ladder ran on — a large part of the point here is that the original rating still exists and still means what it meant. **TrueSkill 2** is the recommended board because it is what Microsoft built after a decade of actually running TrueSkill on Halo: by its own paper it settles on a player's real level in fewer games and predicts results more accurately, and it is the model behind modern Halo ranked play. Neither is an invention of ours — both are published Microsoft Research systems implemented from the papers, so the ladder can be checked rather than taken on trust.
 
@@ -129,6 +130,16 @@ CSR runs on **TrueSkill 2** — the successor algorithm Microsoft designed for m
 *The actual tier emblems the overlay and leaderboards display.*
 
 Everyone starts at CSR 0 with maximum uncertainty. Like TrueSkill, early games move you hundreds of CSR at a time while the system finds your level; once established, a typical match moves you a few dozen. **Champion is not a CSR threshold you can camp** — it is an accolade worn by the **top ten players who have also reached 1780 CSR**, recalculated as the leaderboard changes. Both conditions apply: 1780 alone does not crown you if eleven people sit above you, and a top-ten seat does not crown you below 1780. A Champion is still Onyx-rated underneath. (1780 is also where rank 48 opens on the 1–50 ladder below.)
+
+### Placements, initial rank cap, and the anti-farm rule
+
+- **Placement matches** — your first **10 rated games in each playlist** are placement matches. Until they are done you wear a **placement diamond** showing your progress (0–9) instead of a rank — in the lobby, on match cards, everywhere — and you are not listed on the skill leaderboards yet (the monthly wins boards still count everyone). The overlay shows your own **Placements N/10** progress under the skill boards.
+- **Initial rank cap** — the rank assigned when your placements finish is capped at **Diamond 3 (CSR 1349)**. Your underlying skill estimate is never clamped: if you really are better than Diamond 3, you will climb straight past it in ranked play — the cap only stops a hot placement run from spawning at the very top of the board.
+- **Anti-farm rule** — if a team enters a match as an **85%+ favourite** (by the same win-probability math the ratings run on) and wins, each winner gains at most **+2 CSR**. Losing as the favourite still costs the full amount. Stomping far weaker lobbies is not a way up the ladder.
+
+All three rules are retroactive — the shared match history is re-rated under them on every client and on the website, so everyone agrees on every number.
+
+**Why:** every modern ranked ladder — including today's Halo — has these three guards, and each closes a hole this ladder actually had: a brand-new player's rank means nothing for their first handful of games, so it shouldn't be displayed as if it did; one lucky placement streak should not seed anyone above players with hundreds of proven games; and once a rating is established, beating lobbies the system already called at 85%+ proves nothing and must not pay. The 2009 game shipped with none of these; this ladder gets the modern ones.
 
 ### Halo 2 style: ranks 1–50
 
