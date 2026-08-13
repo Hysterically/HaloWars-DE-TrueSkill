@@ -4,7 +4,7 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.2.0 — it updates itself from here on](../../releases/latest)
+> ### ⬇️ [Download v1.2.1 — it updates itself from here on](../../releases/latest)
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation). This is the **last download you'll ever need**: from now on the overlay offers each new version in-game, one click.
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
@@ -16,6 +16,7 @@ https://github.com/user-attachments/assets/828fd36d-3f0d-4c69-944a-2b901892ea03
 
 ### What each update did
 
+- **v1.2.1** — two rating-rule fixes. Matches recorded with **uneven team sizes** (2v3, 1v3, ...) are no longer rated: matchmade lobbies are always even, so an uneven record means a disconnected player is missing from it, and rating it handed the "short-handed" side an undeserved upset win. And **placements are now CSR-only**, as intended — the classic TrueSkill™ board lists everyone again from their first counting game (v1.2.0 also hid players inside their first 10 rated games from that board). Both fixes are retroactive: the full match history re-rates on first launch, so ratings may shift.
 - **v1.2.0** — **ranked ladder overhaul**: your first 10 rated games per playlist are now **placement matches** (you wear a placement diamond with your progress instead of a rank and join the skill leaderboards when they are done), the rank assigned after placements is **capped at Diamond 3 (CSR 1349)**, and winning as an **85%+ favourite** earns at most **+2 CSR** so lopsided lobbies can't be farmed — see [the rules](#placements-initial-rank-cap-and-the-anti-farm-rule). All three rules are retroactive: the full match history re-rates on first launch, so ratings may shift. Also fixed: veteran players could briefly show as 0/10 placements in Match History right after launch.
 - **v1.1.17** — **critical fix**: opening the Match History tab could instantly close the game if a corrupted match record with an unreadable date had reached your PC through the community sync (one such record circulated on 2026-08-10). Such records now display a dash instead of crashing, are refused by the sync, and any copy already on your PC is cleaned out automatically on first launch — ratings replay once so the leaderboards stay consistent. Skirmish-vs-A.I. games also no longer appear in Match History.
 - **v1.1.16** — Match History: the winner icon could be missing next to players on the winning team when a match ended abruptly (a fast resign-out can leave a teammate's end-of-match state unwritten in the game's memory). The match card now credits the win to the whole team — the same way the ratings have always counted these games.
