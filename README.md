@@ -4,7 +4,7 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.2.1 — it updates itself from here on](../../releases/latest)
+> ### ⬇️ [Download v1.2.2 — it updates itself from here on](../../releases/latest)
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation). This is the **last download you'll ever need**: from now on the overlay offers each new version in-game, one click.
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
@@ -16,6 +16,7 @@ https://github.com/user-attachments/assets/828fd36d-3f0d-4c69-944a-2b901892ea03
 
 ### What each update did
 
+- **v1.2.2** — **country flags**: every gamertag now carries its player's flag — on both leaderboards, on the match cards, and on the Verified Roster — with the country's name on hover. Switch them off any time in **Settings → Appearance → Country Flags**; a player whose country isn't known simply shows no flag. Also a rating-rule fix: a match now rates only on a map built for its size (1v1 on a 1v1 map, 2v2 on a 2v2 map, 3v3 on a 3v3 map). The matchmade playlists always pair a ladder size with maps built for it, so a 1v1 played on a 3v3 map was a custom lobby rather than a ladder game, and it was scoring into the same ladder. Those games stay in your match history but move no rating and no win/loss counters. The fix is retroactive: the full match history re-rates on first launch, so ratings may shift.
 - **v1.2.1** — two rating-rule fixes. Matches recorded with **uneven team sizes** (2v3, 1v3, ...) are no longer rated: matchmade lobbies are always even, so an uneven record means a disconnected player is missing from it, and rating it handed the "short-handed" side an undeserved upset win. And **placements are now CSR-only**, as intended — the classic TrueSkill™ board lists everyone again from their first counting game (v1.2.0 also hid players inside their first 10 rated games from that board). Both fixes are retroactive: the full match history re-rates on first launch, so ratings may shift.
 - **v1.2.0** — **ranked ladder overhaul**: your first 10 rated games per playlist are now **placement matches** (you wear a placement diamond with your progress instead of a rank and join the skill leaderboards when they are done), the rank assigned after placements is **capped at Diamond 3 (CSR 1349)**, and winning as an **85%+ favourite** earns at most **+2 CSR** so lopsided lobbies can't be farmed — see [the rules](#placements-initial-rank-cap-and-the-anti-farm-rule). All three rules are retroactive: the full match history re-rates on first launch, so ratings may shift. Also fixed: veteran players could briefly show as 0/10 placements in Match History right after launch.
 - **v1.1.17** — **critical fix**: opening the Match History tab could instantly close the game if a corrupted match record with an unreadable date had reached your PC through the community sync (one such record circulated on 2026-08-10). Such records now display a dash instead of crashing, are refused by the sync, and any copy already on your PC is cleaned out automatically on first launch — ratings replay once so the leaderboards stay consistent. Skirmish-vs-A.I. games also no longer appear in Match History.
@@ -83,6 +84,11 @@ Every feature below exists for a reason — either something the original game h
 </p>
 
 *The map art and leader portraits used on the match cards.*
+
+### 🌍 Country flags
+- Every gamertag carries its player's country flag — on both leaderboards, on the match cards, and on the Verified Roster — with the country's name on hover. On by default, switchable in **Settings → Appearance → Country Flags**.
+
+**Why:** This is a small international community that mostly meets through a Discord and a lobby list, and the ladder reads as a flat list of names with no sense of who is behind them. A flag next to a gamertag is the cheapest possible way to give the board that texture — it is why every long-running competitive ladder, from chess to fighting games, has always shown one. Flags come from a hand-maintained list rather than guesswork, so a player whose country isn't known shows no flag at all rather than a wrong one.
 
 ### 🎖️ In-game rank icons
 - The game itself draws rank art next to players in the **pre-game lobby and the in-match scoreboard** — your opponents' ranks visible at a glance, using the classic 1–50 numerals.
