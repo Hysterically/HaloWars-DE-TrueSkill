@@ -4,7 +4,7 @@
 
 🌐 **Live ladder: [halo-wars-definitive-edition-stats.pages.dev](https://halo-wars-definitive-edition-stats.pages.dev)** — leaderboards, player pages, and recent games from the current ranked community, updated automatically.
 
-> ### ⬇️ [Download v1.2.3 — it updates itself from here on](../../releases/latest)
+> ### ⬇️ [Download v1.2.4 — it updates itself from here on](../../releases/latest)
 > Unzip, double-click `Install Auto-Load.bat` once, play. No terminal, no administrator rights — see [Installation](#installation). This is the **last download you'll ever need**: from now on the overlay offers each new version in-game, one click.
 > On first launch the overlay downloads the community match history and the leaderboards fill themselves in; your own finished matches upload automatically. To be **rated**, press *Request to join* on the Verified Roster tab (see [Joining the ladder](#joining-the-ladder)). Prefer a purely local tracker? Delete the two `sync_` lines from `ms_trueskill_config.txt` and nothing is ever uploaded.
 
@@ -16,6 +16,7 @@ https://github.com/user-attachments/assets/828fd36d-3f0d-4c69-944a-2b901892ea03
 
 ### What each update did
 
+- **v1.2.4** — the **1–50 ladder now has a different top end per playlist**, because the boards do not play alike: rank **50** takes **2100** CSR in 1v1 (Standard and Deathmatch) and **2000** in 2v2, while 3v3 keeps its old **1900** exactly. Every bit of the extra distance is absorbed in ranks 40–50, so **ranks 1–39 are untouched on every board** and rank 40 still opens at 1419 everywhere. The **Champion** crest also moves down to each board's **rank 47** — **1895** in 1v1, **1825** in 2v2, **1720** in 3v3 — so the crest means the same thing on every playlist instead of being far harder to reach on one. Nothing about the rating changed: your CSR, your match history and your leaderboard position are exactly as they were, and only the rank numeral drawn beside them moves. A 1v1 rank 50 that reads 48 today is the same CSR it was yesterday — the ladder around it got longer.
 - **v1.2.3** — the **placement diamond is readable now**. Its outline was drawn in near-black at partial opacity, which disappeared against the dark lobby card — and at 0 rated games the diamond is outline-only, so a brand-new player's rank slot looked empty rather than "0 of 10". The outline is now grey with a white number, at full strength and with a soft shadow behind it, so it holds up on the lobby card, the in-match scoreboard, and the match cards alike. The same art is on the website. Nothing else changed: your settings, ratings, and match history are untouched.
 - **v1.2.2** — **country flags**: every gamertag now carries its player's flag — on both leaderboards, on the match cards, and on the Verified Roster — with the country's name on hover. Switch them off any time in **Settings → Appearance → Country Flags**; a player whose country isn't known simply shows no flag. Also a rating-rule fix: a match now rates only on a map built for its size (1v1 on a 1v1 map, 2v2 on a 2v2 map, 3v3 on a 3v3 map). The matchmade playlists always pair a ladder size with maps built for it, so a 1v1 played on a 3v3 map was a custom lobby rather than a ladder game, and it was scoring into the same ladder. Those games stay in your match history but move no rating and no win/loss counters. The fix is retroactive: the full match history re-rates on first launch, so ratings may shift.
 - **v1.2.1** — two rating-rule fixes. Matches recorded with **uneven team sizes** (2v3, 1v3, ...) are no longer rated: matchmade lobbies are always even, so an uneven record means a disconnected player is missing from it, and rating it handed the "short-handed" side an undeserved upset win. And **placements are now CSR-only**, as intended — the classic TrueSkill™ board lists everyone again from their first counting game (v1.2.0 also hid players inside their first 10 rated games from that board). Both fixes are retroactive: the full match history re-rates on first launch, so ratings may shift.
@@ -133,11 +134,11 @@ CSR runs on **TrueSkill 2** — the successor algorithm Microsoft designed for m
 | <img src="assets/csr/csr-platinum-1.png" width="32" align="center"> **Platinum 1–6** | 900 – 1199 |
 | <img src="assets/csr/csr-diamond-1.png" width="32" align="center"> **Diamond 1–6** | 1200 – 1499 |
 | <img src="assets/csr/csr-onyx.png" width="32" align="center"> **Onyx** | 1500+ (shows your exact CSR) |
-| <img src="assets/csr/csr-champion.png" width="32" align="center"> **Champion** | Top ten on the leaderboard at 1780+ |
+| <img src="assets/csr/csr-champion.png" width="32" align="center"> **Champion** | Top ten on the board, over that board's floor — 1895 (1v1) · 1825 (2v2) · 1720 (3v3) |
 
 *The actual tier emblems the overlay and leaderboards display.*
 
-Everyone starts at CSR 0 with maximum uncertainty. Like TrueSkill, early games move you hundreds of CSR at a time while the system finds your level; once established, a typical match moves you a few dozen. **Champion is not a CSR threshold you can camp** — it is an accolade worn by the **top ten players who have also reached 1780 CSR**, recalculated as the leaderboard changes. Both conditions apply: 1780 alone does not crown you if eleven people sit above you, and a top-ten seat does not crown you below 1780. A Champion is still Onyx-rated underneath. (1780 is also where rank 48 opens on the 1–50 ladder below.)
+Everyone starts at CSR 0 with maximum uncertainty. Like TrueSkill, early games move you hundreds of CSR at a time while the system finds your level; once established, a typical match moves you a few dozen. **Champion is not a CSR threshold you can camp** — it is an accolade worn by the **top ten players who have also cleared their board's Champion floor**, recalculated as the leaderboard changes. That floor is **each board's rank 47** on the 1–50 ladder below: **1895** in 1v1 (Standard and Deathmatch), **1825** in 2v2, **1720** in 3v3. Both conditions apply: clearing the floor alone does not crown you if eleven people sit above you, and a top-ten seat does not crown you below it. A Champion is still Onyx-rated underneath.
 
 ### Placements, initial rank cap, and the anti-farm rule
 
@@ -164,7 +165,11 @@ Prefer the classic ladder? Switch the display to **Halo 2 1–50** ranks (in the
 
 **Why offer it at all:** because what players want here pulls in two directions, and nothing forces a choice between them. Halo Wars 2 moved the series onto CSR tiers and that is the right modern answer — but a large part of this community never stopped wanting the classic **1–50**, the ladder they grew up climbing, where one number says what a tier badge cannot: Diamond 3 tells you roughly where you sit, a 43 tells you exactly. Nobody is actually arguing about the rating — **TrueSkill 2's accuracy is what everyone wants underneath** — only about how it is drawn. So the numbers are a display setting, not a second rating system: same CSR, same maths, same leaderboard position, shown as tiers or as 1–50, whichever you would rather wear.
 
-Just like the original, the climb gets steeper near the top: ranks **1–44** cost about **36 CSR** each, ranks **45–49** cost **60**, and **50** opens at 1900 CSR. Here is the whole ladder against the tier system — every rank, its CSR, and the tier you wear at that rank:
+Just like the original, the climb gets steeper near the top — and **how steep depends on the board**. Ranks **1–39** are identical everywhere: about **36 CSR** each, from 0 up to 1418. Rank **40** opens at **1419** on every board. From there the ladder stretches to a different finish line per playlist — rank **50** takes **2100** CSR in 1v1 (Standard and Deathmatch), **2000** in 2v2 and **1900** in 3v3 — so a rank near the top costs about **68** CSR in 1v1, **58** in 2v2, and 36 rising to 60 in 3v3. Ranks never get cheaper as you climb on any board.
+
+**Why per playlist:** the boards do not play alike, and one shared ladder flattered whichever of them ran hottest. Stretching the top ten ranks to each board's own ceiling means a rank 48 is a comparable achievement wherever you earned it, instead of being a 1v1 formality and a 3v3 lifetime goal. Only ranks 40–50 move, so nothing below Diamond 5 is affected on any board.
+
+Here is the whole ladder against the tier system. Ranks 1–39 are the same on every board:
 
 | 1–50 rank | CSR | CSR tier |
 |:--|:--|:--|
@@ -207,19 +212,27 @@ Just like the original, the climb gets steeper near the top: ranks **1–44** co
 | <img src="assets/h2/h2-rank-37.png" width="34"> | 1310&nbsp;–&nbsp;1345 | <img src="assets/csr/csr-diamond-3.png" width="22"> Diamond 3 |
 | <img src="assets/h2/h2-rank-38.png" width="34"> | 1346&nbsp;–&nbsp;1381 | <img src="assets/csr/csr-diamond-3.png" width="22"> <img src="assets/csr/csr-diamond-4.png" width="22"> Diamond 3 – 4 |
 | <img src="assets/h2/h2-rank-39.png" width="34"> | 1382&nbsp;–&nbsp;1418 | <img src="assets/csr/csr-diamond-4.png" width="22"> <img src="assets/csr/csr-diamond-5.png" width="22"> Diamond 4 – 5 |
-| <img src="assets/h2/h2-rank-40.png" width="34"> | 1419&nbsp;–&nbsp;1454 | <img src="assets/csr/csr-diamond-5.png" width="22"> <img src="assets/csr/csr-diamond-6.png" width="22"> Diamond 5 – 6 |
-| <img src="assets/h2/h2-rank-41.png" width="34"> | 1455&nbsp;–&nbsp;1490 | <img src="assets/csr/csr-diamond-6.png" width="22"> Diamond 6 |
-| <img src="assets/h2/h2-rank-42.png" width="34"> | 1491&nbsp;–&nbsp;1527 | <img src="assets/csr/csr-diamond-6.png" width="22"> <img src="assets/csr/csr-onyx.png" width="22"> Diamond 6 – Onyx |
-| <img src="assets/h2/h2-rank-43.png" width="34"> | 1528&nbsp;–&nbsp;1563 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
-| <img src="assets/h2/h2-rank-44.png" width="34"> | 1564&nbsp;–&nbsp;1599 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
-| <img src="assets/h2/h2-rank-45.png" width="34"> | 1600&nbsp;–&nbsp;1659 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
-| <img src="assets/h2/h2-rank-46.png" width="34"> | 1660&nbsp;–&nbsp;1719 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
-| <img src="assets/h2/h2-rank-47.png" width="34"> | 1720&nbsp;–&nbsp;1779 | <img src="assets/csr/csr-onyx.png" width="22"> Onyx |
-| <img src="assets/h2/h2-rank-48.png" width="34"> | 1780&nbsp;–&nbsp;1839 | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
-| <img src="assets/h2/h2-rank-49.png" width="34"> | 1840&nbsp;–&nbsp;1899 | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
-| <img src="assets/h2/h2-rank-50.png" width="34"> | 1900+ | <img src="assets/csr/csr-onyx.png" width="22"> <img src="assets/csr/csr-champion.png" width="22"> Onyx · **Champion** if top ten |
+Ranks **40–50** are where the boards part ways — same rank art, different CSR behind it:
 
-A rank that spans two sub-ranks (rank 2 is Bronze 1–2, for example) is simply one rank being wider than one 50-CSR sub-rank. **Champion** is not on this ladder as a rank of its own: from 1780 CSR — rank 48 — the top ten players on the board wear the Champion crest over their Onyx rating.
+| 1–50 rank | 1v1 (Standard & Deathmatch) | 2v2 | 3v3 |
+|:--|:--|:--|:--|
+| <img src="assets/h2/h2-rank-40.png" width="34"> | 1419&nbsp;–&nbsp;1486 | 1419&nbsp;–&nbsp;1476 | 1419&nbsp;–&nbsp;1454 |
+| <img src="assets/h2/h2-rank-41.png" width="34"> | 1487&nbsp;–&nbsp;1554 | 1477&nbsp;–&nbsp;1534 | 1455&nbsp;–&nbsp;1490 |
+| <img src="assets/h2/h2-rank-42.png" width="34"> | 1555&nbsp;–&nbsp;1622 | 1535&nbsp;–&nbsp;1592 | 1491&nbsp;–&nbsp;1527 |
+| <img src="assets/h2/h2-rank-43.png" width="34"> | 1623&nbsp;–&nbsp;1690 | 1593&nbsp;–&nbsp;1650 | 1528&nbsp;–&nbsp;1563 |
+| <img src="assets/h2/h2-rank-44.png" width="34"> | 1691&nbsp;–&nbsp;1758 | 1651&nbsp;–&nbsp;1708 | 1564&nbsp;–&nbsp;1599 |
+| <img src="assets/h2/h2-rank-45.png" width="34"> | 1759&nbsp;–&nbsp;1826 | 1709&nbsp;–&nbsp;1766 | 1600&nbsp;–&nbsp;1659 |
+| <img src="assets/h2/h2-rank-46.png" width="34"> | 1827&nbsp;–&nbsp;1894 | 1767&nbsp;–&nbsp;1824 | 1660&nbsp;–&nbsp;1719 |
+| <img src="assets/h2/h2-rank-47.png" width="34"> <img src="assets/csr/csr-champion.png" width="22"> | **1895**&nbsp;–&nbsp;1962 | **1825**&nbsp;–&nbsp;1882 | **1720**&nbsp;–&nbsp;1779 |
+| <img src="assets/h2/h2-rank-48.png" width="34"> <img src="assets/csr/csr-champion.png" width="22"> | 1963&nbsp;–&nbsp;2030 | 1883&nbsp;–&nbsp;1940 | 1780&nbsp;–&nbsp;1839 |
+| <img src="assets/h2/h2-rank-49.png" width="34"> <img src="assets/csr/csr-champion.png" width="22"> | 2031&nbsp;–&nbsp;2099 | 1941&nbsp;–&nbsp;1999 | 1840&nbsp;–&nbsp;1899 |
+| <img src="assets/h2/h2-rank-50.png" width="34"> <img src="assets/csr/csr-champion.png" width="22"> | **2100+** | **2000+** | **1900+** |
+
+Bold marks each board's **Champion floor** (its rank 47) and its **rank-50 finish line**. <img src="assets/csr/csr-champion.png" width="16"> marks the ranks where a top-ten seat also earns the Champion crest.
+
+On tiers up here: rank 40 is **Diamond 5 – 6** on every board, and the Diamond 6 → **Onyx** crossover at 1500 CSR falls inside rank 41 on the 1v1 and 2v2 boards and inside rank 42 on 3v3. Everything above that is Onyx.
+
+A rank that spans two sub-ranks (rank 2 is Bronze 1–2, for example) is simply one rank being wider than one 50-CSR sub-rank. **Champion** is not on this ladder as a rank of its own: from its board's rank 47 up, the top ten players wear the Champion crest over their Onyx rating.
 
 ### Example: a new player's first session
 
